@@ -5,6 +5,11 @@ $grid__bp-xl: 1200;
 $grid__cols: 12;
 $container__width: 1180;
 
+@mixin content-indent {
+  padding-left: $indent;
+  padding-right: $indent;
+}
+
 $map-grid-props: (
   "": 0,
   "-sm": $grid__bp-sm,

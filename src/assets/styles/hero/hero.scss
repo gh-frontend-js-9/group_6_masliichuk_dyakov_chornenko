@@ -15,6 +15,13 @@
             left: 0;
             text-align: left;
             padding-bottom: 60px;
+            @include create-mq($grid__bp-lg, "max") {
+                display: none !important;
+            }
+
+            @include create-mq($grid__bp-xl, "max") {
+                @include content-indent;
+            }
 
             li:first-child {
                 margin-left: 0;
@@ -25,9 +32,21 @@
   &__content {
     max-width: 60%;
     padding-top: 290px;
+    
+    @include create-mq($grid__bp-lg, "max") {
+        max-width: 100%;
+        padding-top: 50px;
+        text-align: center;
+    }
+
+    @include create-mq($grid__bp-xl, "max") {
+        @include content-indent;
+    }
+    
+
   }
   &__slide {
-    background-color: #1b0042;
+    background-color:$dark-violet;
     height: 100vh;
 
     h1 {
@@ -51,10 +70,15 @@
   }
 }
 
-.carousel-dots li.carousel-dots-active button:before {
-  color: #ff5480 !important;
-}
+
 
 .carousel-dots li button:before {
-  color: #d8d8d8 !important;
+    color:$light-white !important;
+    opacity: 1 !important;
+  }
+
+.carousel-dots li.carousel-dots-active button:before {
+  color:$pink-color !important;
 }
+
+
