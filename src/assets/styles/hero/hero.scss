@@ -1,0 +1,60 @@
+.hero {
+   position: relative;
+
+    &__carousel {
+        position: relative;
+
+        .carousel-dots {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: 9;
+            margin: 0 auto;
+            max-width: $container__width * 1px;
+            right: 0;
+            left: 0;
+            text-align: left;
+            padding-bottom: 60px;
+
+            li:first-child {
+                margin-left: 0;
+            }
+        }
+    }
+
+  &__content {
+    max-width: 60%;
+    padding-top: 290px;
+  }
+  &__slide {
+    background-color: #1b0042;
+    height: 100vh;
+
+    h1 {
+      font-size: 36px;
+      font-weight: 600;
+      letter-spacing: -0.22px;
+    }
+    h4 {
+      font-size: 16px;
+      letter-spacing: -0.1px;
+      text-transform: uppercase;
+      font-weight: 300;
+      line-height: 46px;
+    }
+    h3 {
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: -0.11px;
+      line-height: 32px;
+    }
+  }
+}
+
+.carousel-dots li.carousel-dots-active button:before {
+  color: #ff5480 !important;
+}
+
+.carousel-dots li button:before {
+  color: #d8d8d8 !important;
+}
