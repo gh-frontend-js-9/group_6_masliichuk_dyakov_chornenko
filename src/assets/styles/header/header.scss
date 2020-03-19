@@ -1,0 +1,132 @@
+li {
+  list-style-type: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header-container {
+    position: relative;
+
+    // media screen and (max-width: 576px)
+    @include create-mq($grid__bp-sm, "max") {
+    }
+    
+    // media screen and (min-width: 576px)
+    @include create-mq($grid__bp-sm, "min") {
+    }
+
+    @include create-mq($grid__bp-xl, "max") {
+        margin-left: $indent;
+        margin-right: $indent;
+    }
+
+  .header {
+    position: absolute;
+    z-index: 9999;
+    display: flex;
+    padding: 60px 0 120px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    @include create-mq($grid__bp-lg, "max") {
+        padding-top: 20px;
+    }
+
+    &__search {
+        @include create-mq($grid__bp-lg, "max") {
+            display: none;
+            justify-content: center;
+        }
+    }
+
+    &__toggle {
+        display: none;
+
+        @include create-mq($grid__bp-lg, "max") {
+            display: inline;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+    }
+    
+    &__hamburger {
+        div {
+            width: 35px;
+            height: 3px;
+            background-color: $white-color;
+            margin: 6px 0;
+        }
+    }
+
+    &__left {
+      display: flex;
+      align-items: center;
+
+      @include create-mq($grid__bp-lg, "max") {
+        flex-flow: column;
+        width: 100%;
+        text-align: center;
+      }
+    }
+    &__logo {
+      padding-right: 35px;
+
+      @include create-mq($grid__bp-lg, "max") {
+          padding: 0;
+          padding-bottom: 30px;
+      }
+    }
+    &__nav {
+
+        @include create-mq($grid__bp-lg, "max") {
+            display: none;
+        }
+        
+        &--open {
+            @include create-mq($grid__bp-lg, "max") {
+                display: block;
+            }
+        }
+
+        @include create-mq($grid__bp-lg, "max") {
+            width: 100%;
+            background-color: $violet-color;
+        }
+
+      ul li {
+
+        display: inline;
+        padding-right: 60px;
+
+        @include create-mq($grid__bp-lg, "max") {
+            display: block;
+            padding: 0;
+            padding-bottom: 10px;
+            padding: 20px 0;
+        }
+
+        &:last-child {
+          padding-right: 0;
+        }
+        a {
+          color: #ffffff;
+          padding: 5px 20px 8px 18px;
+        }
+        :hover {
+          color: $white-color;
+          background-color: $pink-color;
+          border-radius: 10px;
+        }
+      }
+    }
+  }
+}

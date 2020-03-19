@@ -1,0 +1,102 @@
+@import "src/assets/styles/grid";
+
+.article-container {
+  position: relative;
+  display: flex;
+  background-color: #f9f9fb;
+  padding-left: 29rem;
+  padding-right: 33rem;
+  justify-content: space-between;
+
+  a {
+    text-decoration: none;
+    color: #111210;
+  }
+
+  a:hover {
+    opacity: 0.5;
+  }
+
+  div {
+    display: inline-block;
+  }
+
+  img {
+    max-width: 573px;
+    height: 358px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+  }
+
+  @include create-mq($grid__bp-sm, "max") {
+    img {
+      display: none;
+    }
+  }
+
+  @include create-mq($grid__bp-md, "max") {
+    max-width: 768px;
+    padding: 25px;
+    .article-container > .col-article:first-child {
+      display: none;
+    }
+  }
+  @include create-mq($grid__bp-lg, "max") {
+    padding: 50px;
+    display: block;
+    max-width: 992px;
+  }
+  @include create-mq($grid__bp-xl, "max") {
+    padding: 25px;
+  }
+  }
+
+.col-article {
+  padding-right: 23px;
+}
+
+.article-author {
+  max-width: 24.313rem;
+  height: 1.563rem;
+  text-transform: uppercase;
+
+  @include create-mq($grid__bp-sm, "max") {
+    max-width: 27.313rem;
+    height: 50px;
+  }
+  @include create-mq($grid__bp-lg, "max") {
+    height: 50px;
+  }
+}
+
+.style-prepositions-article {
+  color: #9b9b9b;
+}
+
+.article-title {
+  max-width: 33.5rem;
+  height: 6.063rem;
+  font-weight: 700;
+  letter-spacing: -0.011rem;
+  line-height: 2.875rem;
+
+  @include create-mq($grid__bp-sm, "max") {
+    max-width: 27.5rem;
+  }
+}
+
+.article-content {
+  width: 32.688rem;
+  height: 5.063rem;
+  opacity: 0.7;
+  color: #9b9b9b;
+  font-size: 1rem;
+  letter-spacing: -0.006rem;
+  line-height: 2rem;
+  @include create-mq($grid__bp-sm, "max") {
+    max-width: 22.688rem;
+    height: 150px;
+  }
+}
+
