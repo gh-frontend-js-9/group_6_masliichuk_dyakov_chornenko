@@ -6,6 +6,7 @@ interface IProps {}
 
 interface IState {
     isOpen: boolean;
+    menuItems: Object[];
 }
 
 export default class Header extends React.Component<IProps, IState> {
@@ -13,7 +14,11 @@ export default class Header extends React.Component<IProps, IState> {
     constructor(props: any) {
         super(props);
         this.state = {
-            isOpen: false
+            isOpen: false,
+            menuItems: [
+                { title: 'Home', url: 'http://google.com' },
+                { title: 'About', url: '#' },
+            ]
         };
     }
 
@@ -37,11 +42,11 @@ export default class Header extends React.Component<IProps, IState> {
 
                         <div className={this.state.isOpen ? 'header__nav header__nav--open' : 'header__nav'}>
                             <ul>
-                                <li><a href="">Popular</a></li>
-                                <li><a href="">New</a></li>
-                                <li><a href="">Reading list</a></li>
-                                <li><a href="">Topics</a></li>
-                                <li><a href="">Subscribe</a></li>
+                                {this.state.menuItems.map((item: any, index) => {
+                                    return <li key={index}>
+                                        <a href={item.url} >{item.title}</a>
+                                    </li>
+                                })}
                             </ul>
                         </div>
                     </div>
