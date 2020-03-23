@@ -4,7 +4,8 @@ import {fakeData} from "../data/data";
 export const BlogNews: React.FC = (props: any) => {
 
     return (
-        <section className={'article-container container'}>
+        <section className={'article-container'}>
+            <div className={'article container'}>
             {fakeData.map((news: any) =>
                 <div className={'col-article'}>
 
@@ -23,6 +24,7 @@ export const BlogNews: React.FC = (props: any) => {
 
                     <p className={'article-content'}> {news.content}</p>
                 </div>)}
+            </div>
         </section>
     )
 }

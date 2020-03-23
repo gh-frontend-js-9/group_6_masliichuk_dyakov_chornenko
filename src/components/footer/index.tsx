@@ -6,8 +6,8 @@ export const Footer: React.FC = (props: any) => {
 
 
     return (
-        <footer>
-            <div className={'footer-block container'}>
+        <footer className={'footer-container container'}>
+            <div className={'footer'}>
                 <div className={'footer-logo'}>
                     <img src={logoFooter} alt={'logo'}/>
                 </div>

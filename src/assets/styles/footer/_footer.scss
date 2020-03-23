@@ -1,14 +1,15 @@
-.footer-block {
+.footer-container {
+  position: relative;
+}
+.footer {
+  position: absolute;
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  height: 100px;
-  background-color: #ffffff;
-  padding-left: 30rem;
-  padding-right: 28.5rem;
+  width: 100%;
+  padding: 26px 40px 26px 20px;
 
-  div {
-    display: inline-block;
-  }
+
 }
 
 .footer-logo {
