@@ -38,6 +38,7 @@ a {
 
     @include create-mq($grid__bp-lg, "max") {
         padding-top: 20px;
+
     }
 
     &__search {
