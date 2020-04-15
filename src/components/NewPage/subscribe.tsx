@@ -1,4 +1,5 @@
 import React from "react";
+import {ButtonSubscribe} from "./btnsubscribe";
 
 export const ElementSubscribe = () => {
 
@@ -11,9 +12,7 @@ export const ElementSubscribe = () => {
                 <p>
                     In your inbox, every other week. And unsubscribe in a click, if you want.
                 </p>
-                <div className={'strange-button'}>
-                    <input placeholder={'Your email'}/><button>Subscribe</button>
-                </div>
+                <ButtonSubscribe/>
             </div>
         </section>
 

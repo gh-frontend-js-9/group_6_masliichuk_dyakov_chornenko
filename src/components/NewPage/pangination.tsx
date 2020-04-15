@@ -9,7 +9,7 @@ export const ElementPaginate:React.FC = () => {
     return (
         <section className={'container-pagination container'}>
         <div className={'pagination'}>
-            <ReactPaginate marginPagesDisplayed={3}  pageCount={9} pageRangeDisplayed={1}
+            <ReactPaginate marginPagesDisplayed={2}  pageCount={9} pageRangeDisplayed={2}
                            previousLabel={<FontAwesomeIcon icon={faChevronLeft} />}
                            nextLabel={<FontAwesomeIcon icon={faChevronRight} />}/>
 

@@ -1,10 +1,12 @@
 .App {
   background-color: #f9f9fb;
 }
+
 .container-news {
   display: flex;
   color: #ff5480;
   text-align: center;
+
   div {
     display: inline-block;
   }
@@ -26,6 +28,7 @@
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
   border-radius: 8px;
   background-color: #ffffff;
+
   input {
     width: 378px;
     height: 83px;
@@ -33,6 +36,7 @@
   }
 
 }
+
 .container-poppost {
   width: 378px;
   height: 483px;
@@ -41,6 +45,7 @@
   background-color: #ffffff;
 
 }
+
 .item-news {
   img {
 
@@ -54,7 +59,7 @@
 
 .post-item-title a {
   font-family: "Open Sans";
-  color:  black;
+  color: black;
   font-size: 36px;
   font-weight: 700;
   letter-spacing: -0.22px;
@@ -62,9 +67,11 @@
 
 
 }
+
 .container-subscribe {
   padding-top: 148px;
 }
+
 .container-subscribe h2 {
   width: 685px;
   height: 65px;
@@ -75,6 +82,7 @@
   letter-spacing: -0.3px;
   line-height: 60px;
 }
+
 .container-subscribe p {
   font-family: "Open Sans";
   color: #111210;
@@ -83,19 +91,48 @@
   letter-spacing: -0.11px;
   line-height: 30px;
 }
-.strange-button {
-  //padding-left: 108px;
-  max-width: 523px;
+
+.container-small-subscribe h2 {
+  text-transform: uppercase;
 }
+
+.container-small-subscribe .strange-button form {
+  input {
+    width: 221-16px;
+    height: 42px;
+    padding-left: 16px;
+    border: none;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.14);
+    border-radius: 40px;
+    background-color: #ffffff;
+  }
+
+  button {
+    width: 103px;
+    height: 42px;
+    border: none;
+    border-radius: 40px;
+    background-color: #ff5480;
+    margin-left: -42px;
+    font-family: "Open Sans";
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: -0.29px;
+
+
+  }
+}
+
 .container-subscribe {
 
-  input{
-    position: absolute;
-    width: 523px;
+  input {
+    width: 353px;
     height: 70px;
     padding-left: 29px;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
-    border-radius: 40px;
+    border-bottom-left-radius: 40px;
+    border-top-left-radius: 40px;
     border: none;
     background-color: #ffffff;
     font-family: "Open Sans";
@@ -104,9 +141,8 @@
     letter-spacing: -0.1px;
     line-height: 46px;
   }
-  button{
-   position: relative;
-   // left: 226px;
+
+  button {
     width: 170px;
     height: 70px;
     border: none;
@@ -115,10 +151,32 @@
     font-family: "Open Sans";
     color: #ffffff;
     font-size: 24px;
-    font-weight: 700;
+    font-weight: 600;
     letter-spacing: -0.5px;
+    margin-left: -31px;
   }
 }
+
+.strange-button {
+
+  form {
+    display: flex;
+    flex-direction: row;
+    border-radius: 40px;
+  }
+
+  input {
+    flex-grow: 2;
+    border: none;
+  }
+
+  input:focus {
+    outline: none;
+  }
+
+}
+
+
 .container-social-media {
   height: 160px;
   font-family: "Open Sans";
@@ -129,3 +187,26 @@
   line-height: 30px;
   text-transform: uppercase;
 }
+
+.container-adsbanner {
+  display: flex;
+  align-content: center;
+  width: 378px;
+  height: 305px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  background-color: #ffffff;
+
+}
+
+.container-adsbanner h2 {
+  font-family: "Open Sans";
+  margin-top: 140px;
+  color: #111210;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: -0.11px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+

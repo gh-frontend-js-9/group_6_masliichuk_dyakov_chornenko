@@ -4,6 +4,7 @@
   padding-top: 50px;
   justify-content: space-between;
 
+
   ul li {
 
     display: inline-block;
@@ -12,10 +13,12 @@
     height: 54px;
     padding-top: 25px;
     background-color: #f1f1f1;
-    margin-left: 10px;
+    margin-left: 20px;
     align-items: center;
   }
-
+  li:last-child {
+    margin-left: 0px;
+  }
 }
 
 .pagination {
@@ -27,7 +30,7 @@
 .pagination a {
   width: 21px;
   height: 30px;
-  font-family: "Open Sans Semi Bold";
+  font-family: "Open Sans";
   color: #111210;
   opacity: 0.5;
   font-size: 18px;
@@ -38,9 +41,6 @@
 }
 
 .pagination li:hover {
-
-  width: 79px;
-  height: 79px;
   background-color: #ff5480;
 
   a {

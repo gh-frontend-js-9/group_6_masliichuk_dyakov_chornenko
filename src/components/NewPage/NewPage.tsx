@@ -8,6 +8,8 @@ import {ElementPaginate} from "./pangination";
 import {Footer} from "../footer";
 import {ElementSubscribe} from "./subscribe";
 import {SocialMedia} from "./socialmedia";
+import {ElementSmallSubscribe} from "./smallsubscribe";
+import {ElementADSBanner} from "./adsbaner";
 
 
 export const NewPage: React.FC = () => {
@@ -26,8 +28,10 @@ export const NewPage: React.FC = () => {
                 <div className={'container-action'}>
                     <ElementSearch/>
                     <ElementPopularPost/>
+                    <ElementSmallSubscribe/>
                     <SocialMedia/>
                     <ElementCalendar/>
+                    <ElementADSBanner/>
                 </div>
             </section>
             <Footer/>
