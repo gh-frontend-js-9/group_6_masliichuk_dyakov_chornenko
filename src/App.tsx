@@ -1,19 +1,26 @@
 import React from 'react';
 import './App.scss';
-import Header from './components/header/Header';
-import Hero from './components/hero/Hero';
-import {Footer} from "./components/footer";
-import {BlogNews} from "./components/blognews";
+import {
+    Switch,
+    Route,
+    BrowserRouter
+} from "react-router-dom";
+
+import {HomePage} from "./components/HomePage/HomePage";
+import {NewPage} from "./components/NewPage/NewPage";
+
 
 function App() {
-  return (
-    <div className="App">
-      <Header/>
-      <Hero/>
-      <BlogNews/>
-      <Footer/>
-    </div>
-  );
+    return (
+        <BrowserRouter>
+            <Switch>
+                <Route exact path={'/'} component ={HomePage}>
+                </Route>
+                <Route path={"/NewPage"} component={NewPage}>
+                </Route>
+            </Switch>
+        </BrowserRouter>
+    );
 }
 
 export default App;

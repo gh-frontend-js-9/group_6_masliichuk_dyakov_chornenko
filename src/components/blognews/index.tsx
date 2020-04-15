@@ -10,7 +10,7 @@ export const BlogNews: React.FC = (props: any) => {
                 <div className={'col-article'}>
 
                     <div>
-                        <img src={news.image} alt={'content-news'}/>
+                        <img src={news.image} alt={'content-calendar'}/>
                     </div>
 
                     <div className={'article-author'}>
@@ -25,6 +25,7 @@ export const BlogNews: React.FC = (props: any) => {
                     <p className={'article-content'}> {news.content}</p>
                 </div>)}
             </div>
+
         </section>
     )
-}
+};

@@ -1,0 +1,128 @@
+
+.container-news {
+  display: flex;
+  color: #ff5480;
+  text-align: center;
+  div {
+    display: inline-block;
+  }
+}
+
+.container-author {
+  width: 774px;
+  height: 315px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: #111210;
+
+}
+
+.container-search {
+  width: 378px;
+  height: 83px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  background-color: #ffffff;
+  input {
+    width: 378px;
+    height: 83px;
+    border: none;
+  }
+
+}
+.container-poppost {
+  width: 378px;
+  height: 483px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  background-color: #ffffff;
+
+}
+.item-news {
+  img {
+
+    width: 774px;
+    height: 546px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    background-color: #ffffff;
+  }
+}
+
+.post-item-title a {
+  font-family: "Open Sans";
+  color:  black;
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: -0.22px;
+  line-height: 46px;
+
+
+}
+.container-subscribe {
+  padding-top: 148px;
+}
+.container-subscribe h2 {
+  width: 685px;
+  height: 65px;
+  font-family: "Open Sans";
+  color: #111210;
+  font-size: 48px;
+  font-weight: 600;
+  letter-spacing: -0.3px;
+  line-height: 60px;
+}
+.container-subscribe p {
+  font-family: "Open Sans";
+  color: #111210;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: -0.11px;
+  line-height: 30px;
+}
+
+.container-subscribe {
+
+  input{
+    position: absolute;
+    width: 523px;
+    height: 70px;
+    padding-left: 29px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+    border-radius: 40px;
+    border: none;
+    background-color: #ffffff;
+    /* Style for "Your email" */
+    font-family: "Open Sans";
+    color: #111210;
+    font-size: 16px;
+    letter-spacing: -0.1px;
+    line-height: 46px;
+  }
+  button{
+    position: relative;
+    left: 226px;
+    width: 170px;
+    height: 70px;
+    border: none;
+    border-radius: 40px;
+    background-color: #ff5480;
+    /* Style for "Subscribe" */
+    font-family: "Open Sans";
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+  }
+}
+.container-social-media {
+  height: 160px;
+  font-family: "Open Sans";
+  color: #111210;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: -0.11px;
+  line-height: 30px;
+  text-transform: uppercase;
+}

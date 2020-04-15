@@ -32,27 +32,27 @@ export default class Header extends React.Component<IProps, IState> {
                 <div className="header">
                     <div className="header__left">
                         <div className="header__logo">
-                            <a href="#"><img src={logo} alt="logo" /></a>
+                            <a href="../NewPage"><img src={logo} alt="logo" /></a>
                         </div>
 
                         <div className={this.state.isOpen ? 'header__nav header__nav--open' : 'header__nav'}>
                             <ul>
-                                <li><a href="">Popular</a></li>
-                                <li><a href="">New</a></li>
-                                <li><a href="">Reading list</a></li>
-                                <li><a href="">Topics</a></li>
-                                <li><a href="">Subscribe</a></li>
+                                <li><a href="../NewPage">Popular</a></li>
+                                <li><a href={"../NewPage"}>New</a></li>
+                                <li><a href="../NewPage">Reading list</a></li>
+                                <li><a href="../NewPage">Topics</a></li>
+                                <li><a href="../NewPage">Subscribe</a></li>
                             </ul>
                         </div>
                     </div>
 
 
                     <div className="header__search">
-                        <a href="#"><img src={search} alt="search" /></a>
+                        <a href="../NewPage"><img src={search} alt="search" /></a>
                     </div>
 
                     <div className="header__toggle">
-                        <a href="#" onClick={this.handleClick} >
+                        <a href="../NewPage" onClick={this.handleClick} >
                             <div className="header__hamburger" >
                                 <div></div>
                                 <div></div>

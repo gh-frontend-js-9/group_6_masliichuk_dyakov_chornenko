@@ -1,6 +1,6 @@
 import React from "react";
 import logoFooter from '../../assets/images/footer/logofooter.png';
-import {navigationIconMedia} from "../data/data";
+import {IconList} from "./iconlist";
 
 export const Footer: React.FC = (props: any) => {
 
@@ -11,16 +11,7 @@ export const Footer: React.FC = (props: any) => {
                 <div className={'footer-logo'}>
                     <img src={logoFooter} alt={'logo'}/>
                 </div>
-                <div className={'footer-item'}>
-                    <ul className={'footer-list-icon'}>
-                        {navigationIconMedia.map(value =>
-                            <li className={'footer-icon'}>
-                                <a href={'#'}>
-                                    <img src={value.image} alt={value.name}/>
-                                </a>
-                            </li>)}
-                    </ul>
-                </div>
+                <IconList/>
                 <div>
 
                     <p className={'footer-site-inform'}>

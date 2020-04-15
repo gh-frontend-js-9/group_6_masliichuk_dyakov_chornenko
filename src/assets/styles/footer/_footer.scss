@@ -25,20 +25,14 @@
 }
 
 .footer-list-icon {
-  max-width: 10rem;
   padding-top: 10px;
+  justify-content: center;
+  text-align: center;
 
   @include create-mq($grid__bp-md, "max") {
     display: none;
   }
-  li {
-    display: inline;
-    width: 20px;
-    height: 20px;
-    padding-right: 10px;
 
-    opacity: 0.8;
-  }
 
   a {
     text-decoration: none;
@@ -49,9 +43,8 @@
   }
 }
 
-.footer-icon {
-  text-align: center;
-  text-decoration: none;
+.style-icon {
+ color: white;
 }
 
 .footer-site-inform {
@@ -59,6 +52,22 @@
   color: #9b9b9b;
   font-family: "Open Sans";
   font-size: 0.875rem;
+}
+
+.footer-list-icon li {
+    display: inline-block;
+    margin-left: 20px;
+    width: 20px ;
+    height: 22px;
+    background-color: #9b9b9b;
+    border-radius: 50px;
+    opacity: 0.8;
+
+}
+.container-social-media li {
+  width: 37px;
+  height: 39px;
+  background-color: #ff5480;
 }
 
 
