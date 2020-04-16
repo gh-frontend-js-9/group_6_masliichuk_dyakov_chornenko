@@ -1,0 +1,284 @@
+.post{
+    color:$dark-black-color;
+    h1 {
+        font-size: 36px;
+        font-weight: 700;
+        letter-spacing: -0.22px;
+        line-height: 46px;
+    }
+
+    h3 {
+        font-size: 18px;
+        font-weight: 600;
+        letter-spacing: -0.11px;
+        line-height: 30px;
+    }
+    
+    &__address {
+        font-size: 16px;
+        letter-spacing: -0.1px;
+        line-height: 46px;
+        text-transform: uppercase;
+        font-style: normal;
+        font-weight: 400;
+        span{
+            color: #9b9b9b;
+        }
+    }
+
+    &__heading{
+        padding-bottom:60px;
+    }
+
+    &__content {
+        background-color:$grey-color;
+        padding:50px 0 225px;
+        p {
+            color:$grey-light-color;
+            font-size: 20px;
+            line-height: 40px;
+            font-weight: 400;
+            a {
+                color:$blue-color;
+            }
+        }
+        h2 {
+            margin-top:110px;
+            color: $dark-black-color;
+            font-size: 28px;
+            font-weight: 600;
+            letter-spacing: -0.17px;
+            line-height: 46px;
+        }
+        ul {
+            li {
+                color: $grey-light-color;
+                font-size: 20px;
+                line-height: 40px;
+                font-weight: 400;
+                padding-bottom:45px;
+            }
+        }
+        
+        .post__testimonials{
+            color: $purple-color;
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: -0.15px;
+            line-height: 58px;
+            font-style: italic;
+            text-align: center;
+            padding: 0px 5px;
+            margin-top: 40px;
+            
+        }
+    }
+
+    &__images-list {
+        > div > div {
+            padding-right: 20px;
+        }
+    }
+
+    &__image {
+        max-width: 100%;
+        margin: 0 auto;
+        display: block;
+        border-radius: 8px;
+    }
+
+    .socials {
+        &__item{
+            width: 34px;
+            height: 34px;
+            text-align: center;
+            background-color: #9b9b9b;
+            margin: 0 auto;
+            margin-bottom: 35px;
+            border-radius: 25px;
+            font-size: 22px;
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                color: $white-color;
+            }
+        }
+    }
+
+    .social-actions{
+        &__item{
+            margin-bottom:15px;
+            text-align: center;
+            p {
+                margin:0;
+                font-size: 18px;
+                font-weight: 600;
+                letter-spacing: -0.11px;
+                text-transform: uppercase;
+            }
+
+            .fa{
+                font-size: 25px;
+            }
+
+            .fa-heart{
+                color: $pink-color;
+            }
+
+            .fa-eye{
+                color:$black-color;
+            }
+
+        }
+    }
+
+    &__breadcrumps {
+        @at-root {
+            ul#{&} {
+                li  {
+                    display: inline-block;
+                    font-size: 12px;
+                    letter-spacing: -0.07px;
+                    a{
+                        color: #9b9b9b;
+                    }
+                }
+            }
+        }
+    }
+
+    &__text {
+        margin-top: 55px;
+    }
+
+    &__author{
+        text-align:center;
+        margin-top: 40px;
+    }
+
+    &__person {
+        color: $dark-black-color;
+        font-size: 18px;
+        font-weight: 600;
+        letter-spacing: -0.11px;
+        line-height: 30px;
+        text-transform: uppercase;
+    }
+
+    &__follow {
+        font-size: 16px;
+        letter-spacing: -0.1px;
+        line-height: 46px;
+        color: $dark-black-color;
+        font-weight:400;
+        a {
+            color:$blue-color;
+        }
+    }
+
+
+    .comments{
+        color:$dark-black-color;
+        margin-top:200px;
+        &__title{
+            font-size: 28px;
+            font-weight: 600;
+            letter-spacing: -0.17px;
+            line-height: 32px;
+            margin:0;
+        }
+
+        &__btn{
+            color: $pink-color;
+            font-size: 18px;
+            font-weight: 600;
+            letter-spacing: -0.37px;
+            background-color: transparent;
+            padding: 15px 25px;
+            border-radius: 10px;
+            border-color: $pink-color;
+            &:hover{
+                color: violet;;
+            }
+        }
+    }
+    
+}
+
+.related-posts{
+    color: $dark-black-color;
+    margin-top:160px;
+    &__name{
+        @at-root {
+            p#{&} {
+                font-size: 36px;
+                font-weight: 600;
+                letter-spacing: -0.22px;
+                line-height: 46px;            
+            }
+        }
+    }
+
+    &__block{
+        padding-right:10px;
+        &.last{
+            padding-right:0;
+            padding-left:10px;
+        }
+    }
+    > .row:first-child{
+        margin-bottom:40px;
+    }
+    &__more{
+        text-align: right;
+        display: block;
+        font-size: 16px;
+        letter-spacing: -0.1px;
+        line-height: 46px;
+        font-weight: 400;
+    }
+
+    &__address {
+        font-size: 16px;
+        letter-spacing: -0.1px;
+        line-height: 46px;
+        text-transform: uppercase;
+        font-style: normal;
+        font-weight: 400;
+        span{
+            color: #9b9b9b;
+        }
+    }
+    &__image{
+        max-width: 100%;
+        margin: 0 auto;
+        display: block;
+        border-radius: 8px;
+    }
+
+    &__title{
+        @at-root{
+            h3#{&} {
+                font-size: 28px;
+                font-weight: 600;
+                letter-spacing: -0.17px;
+                line-height: 46px;
+            }
+        }
+        
+    }
+
+    &__description{
+        @at-root{
+            p#{&} {
+                color: #9b9b9b;
+                font-size: 16px;
+                letter-spacing: -0.1px;
+                line-height: 32px;
+            }
+        }
+    }
+    
+}

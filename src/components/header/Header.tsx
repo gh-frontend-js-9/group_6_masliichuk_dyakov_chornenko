@@ -2,7 +2,9 @@ import React, { SyntheticEvent } from 'react';
 import logo from './../../assets/images/header/logo.png';
 import search from './../../assets/images/header/search-icon.png';
 
-interface IProps {}
+interface IProps {
+    plain: boolean;
+}
 
 interface IState {
     isOpen: boolean;
@@ -34,7 +36,7 @@ export default class Header extends React.Component<IProps, IState> {
     render() {
         return (
             <header className="container header-container">
-                <div className="header">
+                <div className={ this.props.plain ? 'header header--plain' : 'header' }>
                     <div className="header__left">
                         <div className="header__logo">
                             <a href="#"><img src={logo} alt="logo" /></a>

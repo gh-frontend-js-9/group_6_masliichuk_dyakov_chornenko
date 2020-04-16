@@ -5,7 +5,9 @@
 @import './assets/styles/hero/hero.scss';
 @import './assets/styles/footer/footer';
 @import './assets/styles/blognews/blognews';
+@import './assets/styles/post/post.scss';
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700&display=swap');
+@import './assets/styles/font-awesome.min.css';
 
 body{
     font-family: 'Open Sans', sans-serif;
@@ -13,3 +15,8 @@ body{
     color: $white-color;
     font-weight: 600;
 }
+
+p{
+    margin:0;
+}
+
