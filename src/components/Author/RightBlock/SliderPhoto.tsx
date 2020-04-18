@@ -7,6 +7,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 class SimpleSlider extends React.Component {
     render() {
+
         const settings = {
             dots: true,
             infinite: true,
