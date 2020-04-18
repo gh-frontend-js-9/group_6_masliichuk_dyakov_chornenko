@@ -5,11 +5,18 @@
 @import './assets/styles/hero/hero.scss';
 @import './assets/styles/footer/footer';
 @import './assets/styles/blognews/blognews';
+@import 'assets/styles/Author/authorstyle';
+@import 'assets/styles/Author/paginate';
+@import 'assets/styles/Author/calendarstyle';
+@import 'assets/styles/Author/filter';
+@import 'assets/styles/Author/sliderstyle';
+@import 'assets/styles/Author/poularpost';
+@import 'assets/styles/Author/search';
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700&display=swap');
 
-body{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    color: $white-color;
-    font-weight: 600;
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: $white-color;
+  font-weight: 600;
 }

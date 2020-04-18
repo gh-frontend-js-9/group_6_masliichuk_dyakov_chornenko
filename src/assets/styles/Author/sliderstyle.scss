@@ -1,0 +1,43 @@
+.container-slider {
+  height: 317px;
+  width: 378px;
+  padding-top: 20px;
+  @include create-mq($grid__bp-xl, "max") {
+    width: 100%;
+  }
+}
+
+div .slick-dots {
+  display: none !important;
+}
+
+.slick-slide {
+  width: 197px !important;
+  height: 225px !important;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  background-color: #ffffff;
+  margin-left: 21px;
+
+  img {
+    width: 197px !important;
+    height: 225px !important;
+  }
+}
+
+.slide-style {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+
+.slick-next:before {
+  display: block;
+  margin-left: -50px;
+  width: 32px;
+  height: 32px;
+  background-image: url("../../images/newpage/left-arrow.png");
+  background-repeat: no-repeat;
+  //background-color: #ff5480;
+
+}
