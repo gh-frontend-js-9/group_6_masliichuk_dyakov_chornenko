@@ -1,0 +1,346 @@
+.App {
+  background-color: #f9f9fb;
+}
+
+.container-post {
+  margin-right: 20px;
+  text-align: center;
+  @include create-mq($grid__bp-xl, "max") {
+    .item-news:nth-child(3){
+      display: none;
+    }
+  }
+}
+
+.container-news {
+  display: flex;
+  color: #ff5480;
+  @include create-mq($grid__bp-xl, "max") {
+    margin-left: $indent;
+    margin-right: $indent;
+    display: block;
+  }
+}
+.container-action {
+  text-align: center;
+
+}
+
+.author-post{
+  width: 377px;
+  height: 25px;
+  font-family: "Open Sans";
+  color: #111210;
+  font-size: 16px;
+  letter-spacing: -0.1px;
+  line-height: 46px;
+  text-transform: uppercase;
+
+
+}
+.container-author {
+  p{
+    font-family: "Open Sans";
+    color: #111210;
+    font-size: 16px;
+    letter-spacing: -0.1px;
+    line-height: 24px;
+  }
+}
+.container-post {
+  text-align: left;
+}
+.author-post-style {
+  color: #9b9b9b;
+}
+.container-author {
+  width: 774px;
+  padding-top: 43px;
+  padding-bottom: 43px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: #111210;
+  text-align: center;
+  margin-bottom: 20px;
+  @include create-mq($grid__bp-xl, "max") {
+    width: 100%;
+  }
+
+}
+
+.container-search {
+  width: 378px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  background-color: #ffffff;
+  margin-bottom: 20px;
+  @include create-mq($grid__bp-xl, "max") {
+   width: 100%;
+  }
+
+  input {
+    height: 83px;
+    border: none;
+    margin-left: 25px;
+  }
+
+}
+
+.container-recentpost {
+  width: 378px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  background-color: #ffffff;
+  text-align: left;
+  padding-top: 32px;
+  padding-bottom: 40px;
+  @include create-mq($grid__bp-xl, "max") {
+    display: none;
+  }
+
+  li {
+    margin-left: 31px;
+  }
+
+  h2 {
+    text-align: center;
+    font-family: "Open Sans";
+    color: #111210;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: -0.11px;
+    line-height: 30px;
+    text-transform: uppercase;
+
+  }
+
+  h3 a {
+
+    font-family: "Open Sans";
+    color: #000000;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  h3:first-letter {
+    text-transform: uppercase;
+  }
+
+  a:hover {
+    color: #ff5480;
+  }
+
+}
+
+.item-news {
+  margin-bottom: 52px;
+  @include create-mq($grid__bp-xl, "max") {
+    text-align: center;
+  }
+
+  img {
+    width: 774px;
+    height: 546px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    @include create-mq($grid__bp-xl, "max") {
+      width: 75%;
+      height: 50%;
+    }
+
+  }
+}
+
+.post-item-title a {
+  font-family: "Open Sans";
+  color: black;
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: -0.22px;
+  line-height: 46px;
+
+
+}
+
+.post-item-title:first-letter {
+  text-transform: uppercase;
+}
+
+.container-subscribe {
+  padding-top: 148px;
+  margin-bottom: 20px;
+  text-align: center;
+  @include create-mq($grid__bp-xl, "max") {
+    width: 100%;
+  }
+}
+
+.container-subscribe h2 {
+  font-family: "Open Sans";
+  color: #111210;
+  font-size: 48px;
+  font-weight: 600;
+  letter-spacing: -0.3px;
+  line-height: 60px;
+}
+
+.container-subscribe p {
+  font-family: "Open Sans";
+  color: #111210;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: -0.11px;
+  line-height: 30px;
+}
+
+
+.container-subscribe {
+
+  input {
+    width: 353px;
+    height: 70px;
+    padding-left: 29px;
+    margin-left: 108px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+    border-bottom-left-radius: 40px;
+    border-top-left-radius: 40px;
+    border: none;
+    background-color: #ffffff;
+    font-family: "Open Sans";
+    color: #111210;
+    font-size: 16px;
+    letter-spacing: -0.1px;
+    line-height: 46px;
+  }
+
+  button {
+    width: 170px;
+    height: 70px;
+    border: none;
+    border-radius: 40px;
+    background-color: #ff5480;
+    font-family: "Open Sans";
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    margin-left: -31px;
+  }
+}
+
+.strange-button {
+
+  form {
+    display: flex;
+    flex-direction: row;
+    border-radius: 40px;
+  }
+
+  input {
+    // flex-grow: 2;
+    border: none;
+  }
+
+  input:focus {
+    outline: none;
+  }
+
+}
+
+.container-small-subscribe {
+  width: 378px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  background-color: #ffffff;
+  text-transform: uppercase;
+  padding-top: 29px;
+  padding-bottom: 52px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  @include create-mq($grid__bp-xl, "max") {
+    display: none;
+
+
+  }
+}
+
+.container-small-subscribe .strange-button form {
+
+  input {
+    width: 205-16px;
+    height: 42px;
+    padding-left: 16px;
+    margin-left: 48px;
+    border: none;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.14);
+    border-radius: 40px;
+    background-color: #ffffff;
+  }
+
+  button {
+    width: 103px;
+    height: 42px;
+    border: none;
+    border-radius: 40px;
+    background-color: #ff5480;
+    margin-left: -42px;
+    font-family: "Open Sans";
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: -0.29px;
+
+
+  }
+}
+
+.container-social-media {
+  width: 378px;
+  font-family: "Open Sans";
+  color: #111210;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  background-color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: -0.11px;
+  line-height: 30px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-top: 29px;
+  padding-bottom: 36px;
+  @include create-mq($grid__bp-xl, "max") {
+    width: 100%;
+  }
+}
+
+.container-adsbanner {
+  display: flex;
+  width: 378px;
+  height: 305px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  background-color: #ffffff;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  justify-content: center;
+  @include create-mq($grid__bp-lg, "max") {
+    display: none;
+  }
+
+}
+
+.container-adsbanner h2 {
+  font-family: "Open Sans";
+  margin-top: 140px;
+  color: #111210;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: -0.11px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
