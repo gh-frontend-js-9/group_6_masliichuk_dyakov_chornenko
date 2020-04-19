@@ -22,7 +22,7 @@
         font-style: normal;
         font-weight: 400;
         span{
-            color: #9b9b9b;
+            color: $grey-lighter-color;
         }
     }
 
@@ -92,7 +92,7 @@
             width: 34px;
             height: 34px;
             text-align: center;
-            background-color: #9b9b9b;
+            background-color: $grey-lighter-color;
             margin: 0 auto;
             margin-bottom: 35px;
             border-radius: 25px;
@@ -142,7 +142,7 @@
                     font-size: 12px;
                     letter-spacing: -0.07px;
                     a{
-                        color: #9b9b9b;
+                        color: $grey-lighter-color;
                     }
                 }
             }
@@ -181,7 +181,28 @@
 
     .comments{
         color:$dark-black-color;
+        max-width: 815px;
+        margin: 0 auto;
         margin-top:200px;
+
+        hr {
+            display: block; 
+            height: 1px;
+            border: 0; 
+            border-top: 1px solid $light-white;
+            margin: 1em 0; 
+            padding: 0;
+        }
+
+        &__item{
+            margin-bottom:70px;
+        }
+
+        &__item--reply {
+            padding-left: 16.66667%;
+            width: calc( 100% - 16.66667%);
+        }
+        
         &__title{
             font-size: 28px;
             font-weight: 600;
@@ -199,13 +220,80 @@
             padding: 15px 25px;
             border-radius: 10px;
             border-color: $pink-color;
+            float: right;
+            cursor: pointer;
             &:hover{
                 color: violet;;
             }
         }
+
+        &__avatar{
+            //padding-right: 28px;
+
+            img {
+                width: 100px;
+            }
+        }
+
+        > .row:first-child  {
+            margin-bottom: 60px;
+        }
+
+        > .row:nth-child(2)  {
+            margin-bottom: 125px;
+        }
+
+         &__author {
+            p {
+                font-size: 18px;
+                font-weight: 600;
+                letter-spacing: -0.11px;
+            }
+        } 
+
+        &__data {
+            padding-left: 15px;
+            p {
+                color: $grey-lighter-color;
+                font-size: 16px;
+                letter-spacing: -0.1px;
+                }
+        }
+            
+
+        &__description p {
+            font-size: 16px;
+            letter-spacing: -0.1px;
+            line-height: 32px;
+        }
+
+        &__reply{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+    }
+
+    .btn-reply {
+        color: $grey-lighter-color;
+        font-size: 18px;
+        font-weight: 600;
+        letter-spacing: -0.37px;
+        border-radius: 10px;
+        border: 2px solid #e4e4e4;
+        padding:13px 19px;
+        background-color: transparent;
+        cursor: pointer;
+        &:hover{
+            background-color:$pink-color;
+            color:$white-color;
+        }
     }
     
 }
+
+
 
 .related-posts{
     color: $dark-black-color;
@@ -248,7 +336,7 @@
         font-style: normal;
         font-weight: 400;
         span{
-            color: #9b9b9b;
+            color: $grey-lighter-color;
         }
     }
     &__image{
@@ -273,7 +361,7 @@
     &__description{
         @at-root{
             p#{&} {
-                color: #9b9b9b;
+                color: $grey-lighter-color;
                 font-size: 16px;
                 letter-spacing: -0.1px;
                 line-height: 32px;
@@ -281,4 +369,74 @@
         }
     }
     
+}
+
+img { max-width: 100%; }
+
+.form-comment {   
+    padding:80px 0;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    background-color: $white-color;
+    margin-top: 60px;
+    &__container{
+        max-width: 530px;
+    }
+    h3 {
+        font-size: 28px;
+        font-weight: 600;
+        letter-spacing: -0.17px;
+        line-height: 46px;
+    }
+
+    a {
+        color: $blue-color;
+        font-size: 16px;
+        letter-spacing: -0.1px;
+    }
+
+    &__btn {
+        font-size: 24px;
+        font-weight: 600;
+        margin-top:35px;
+
+        button{
+            background-color: $pink-color;
+            padding: 17px 30px 20px 31px;
+            border-radius: 40px;
+            color: $white-color;
+            cursor: pointer;
+            &:hover{
+                background-color: $purple-color;
+            }
+        }
+    }
+
+    &__terms{
+        font-size: 16px;
+        line-height: 46px;
+        color: $grey-lighter-color;
+    }
+    &__group{
+        margin-bottom:15px;
+    }
+    form {
+        margin:0 auto;
+
+        input[type=text], input[type=password], input[type=email],textarea{
+            border-radius: 10px;
+            border: 2px solid #e6e6e6;
+            padding: 20px 20px;
+            width: 100%;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        input[type=checkbox] {
+            margin-right: 5px;
+        }
+
+    }
 }

@@ -10,9 +10,9 @@ function App() {
   return (
     <div className="App">
       <Header plain={true} />
-      <Post></Post> 
-      {/* <Hero/>
-      <BlogNews/> */}
+      {/* <Post></Post>  */}
+       <Hero/>
+      <BlogNews/> 
       <Footer/>
     </div>
   );
