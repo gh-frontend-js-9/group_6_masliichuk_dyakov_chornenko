@@ -5,6 +5,7 @@
   background-color: #ffffff;
   padding-top: 32px;
   line-height: 20px;
+  z-index: 2;
   @include create-mq($grid__bp-lg, "max") {
     width: 100%;
     margin-bottom: 0;

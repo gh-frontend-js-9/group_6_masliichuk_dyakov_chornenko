@@ -1,12 +1,11 @@
 import React from "react";
 import {connect} from "react-redux";
-import {fetchPosts} from "../../redux/action/action";
 import {bindActionCreators} from "redux";
 import {faChevronRight, faChevronLeft} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
+import {fetchPosts} from "../../redux/action/action";
 
-console.clear();
 
 interface IPagination {
     currentPage: number,
@@ -52,7 +51,6 @@ class Pagination extends React.Component <any, IPagination, any> {
             </li>;
         });
 
-        // Logic for displaying page numbers
         const pageNumbers = [];
         for (let i = 1; i <= Math.ceil(fetchedPosts.length / displayPerPage); i++) {
             pageNumbers.push(i);

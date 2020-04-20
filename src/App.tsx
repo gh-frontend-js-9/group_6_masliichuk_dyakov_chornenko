@@ -1,10 +1,11 @@
 import React from 'react';
-import './App.scss';
 import {
     Switch,
     Route,
     BrowserRouter
 } from "react-router-dom";
+
+import './App.scss';
 
 import {HomePage} from "./components/Home/HomePage";
 import {Author} from "./components/Author/Author";

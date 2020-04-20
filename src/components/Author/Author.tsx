@@ -1,7 +1,7 @@
 import React from "react";
+
 import {ElementCalendar} from "./RightBlock/Calendar";
 import {ElementAuthor} from "./PostsList/AuthorBlock";
-import {ElementSearch} from "./RightBlock/Search";
 import {ElementPopularPost} from "./RightBlock/PopularPost";
 import {Footer} from "../Home/footer";
 import {ElementSubscribe} from "./FornSubscribe/Subscribe";
@@ -13,6 +13,7 @@ import {ElementRecentPost} from "./RightBlock/RecentPost";
 import SimpleSlider from "./RightBlock/SliderPhoto";
 import Pagination from "./PostsList/Paginate";
 import {FieldSearch, Menu} from "../Menu/Menu";
+import SearchExample from "./RightBlock/Search";
 
 export const Author: React.FC = () => {
 
@@ -31,7 +32,7 @@ export const Author: React.FC = () => {
 
                 <div className={'container-action'}>
                     <FieldSearch/>
-                    <ElementSearch/>
+                    <SearchExample/>
                     <div className={'doubleblock-mobile'}>
                         <ElementPopularPost/>
                         <ElementRecentPost/>
@@ -44,6 +45,7 @@ export const Author: React.FC = () => {
                         <ElementADSBanner/>
                         <ElementFilter/>
                     </div>
+
                 </div>
             </section>
             <Footer/>

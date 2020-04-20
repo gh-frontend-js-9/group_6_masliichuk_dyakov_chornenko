@@ -38,3 +38,26 @@ button {
   height: 40px;
   width: 40px;
 }
+
+.window-results-search {
+  display: flex;
+  position: absolute;
+  width: 378px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  background-color: #ffffff;
+  z-index: 4;
+
+  a {
+    color: #111210;
+    height: 50px;
+  }
+
+  a:first-letter {
+    text-transform: uppercase;
+  }
+
+  a:hover {
+    color: #ff5480;
+  }
+}
