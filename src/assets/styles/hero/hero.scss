@@ -35,7 +35,7 @@
     
     @include create-mq($grid__bp-lg, "max") {
         max-width: 100%;
-        padding-top: 50px;
+        padding-top: 80px;
         text-align: center;
     }
 
@@ -47,12 +47,21 @@
   }
   &__slide {
     background-color:$dark-violet;
-    height: 100vh;
 
+    @include create-mq($grid__bp-md, "min") { // more than 768px
+      height: 100vh;
+      min-height: 700px;      
+    }
+  
     h1 {
       font-size: 36px;
       font-weight: 600;
       letter-spacing: -0.22px;
+
+      @include create-mq($grid__bp-md, "max") { // less than < 768px
+        font-size: 28px;
+        padding: 30px 0;
+      }
     }
     h4 {
       font-size: 16px;
