@@ -1,5 +1,6 @@
 .post{
     color:$dark-black-color;
+
     h1 {
         font-size: 36px;
         font-weight: 700;
@@ -27,12 +28,21 @@
     }
 
     &__heading{
-        padding-bottom:60px;
+        padding-bottom: 60px;
+
+        @include create-mq($grid__bp-md, "max") {
+            @include content-indent;
+        }
     }
 
     &__content {
         background-color:$grey-color;
-        padding:50px 0 225px;
+        padding: 50px 0 225px;
+
+        @include create-mq($grid__bp-md, "max") {
+            @include content-indent;
+        }
+    
         p {
             color:$grey-light-color;
             font-size: 20px;
@@ -56,8 +66,9 @@
                 font-size: 20px;
                 line-height: 40px;
                 font-weight: 400;
-                padding-bottom:45px;
             }
+            padding-bottom:45px;
+
         }
         
         .post__testimonials{
@@ -77,6 +88,11 @@
     &__images-list {
         > div > div {
             padding-right: 20px;
+
+            @include create-mq($grid__bp-md, "max") {
+                padding-right: 0;
+            }
+        
         }
     }
 
@@ -85,9 +101,15 @@
         margin: 0 auto;
         display: block;
         border-radius: 8px;
+        margin-bottom: $indent;
     }
 
     .socials {
+
+        @include create-mq($grid__bp-md, "max") {
+            display: flex;
+        }
+        
         &__item{
             width: 34px;
             height: 34px;
@@ -108,6 +130,14 @@
     }
 
     .social-actions{
+
+
+        @include create-mq($grid__bp-md, "max") {
+            display: flex;
+            justify-content: space-evenly;
+            padding-top: 30px;
+        }
+
         &__item{
             margin-bottom:15px;
             text-align: center;
@@ -137,6 +167,11 @@
     &__breadcrumps {
         @at-root {
             ul#{&} {
+
+                @include create-mq($grid__bp-md, "max") {
+                    text-align: center;
+                }
+
                 li  {
                     display: inline-block;
                     font-size: 12px;
@@ -195,12 +230,16 @@
         }
 
         &__item{
-            margin-bottom:70px;
+            margin-bottom: 70px;
+
+            @include create-mq($grid__bp-md, "max") {
+                justify-content: center;
+            }            
         }
 
         &__item--reply {
-            padding-left: 16.66667%;
-            width: calc( 100% - 16.66667%);
+            // padding-left: 16.66667%;
+            // width: calc( 100% - 16.66667%);
         }
         
         &__title{
@@ -209,6 +248,10 @@
             letter-spacing: -0.17px;
             line-height: 32px;
             margin:0;
+
+            @include create-mq($grid__bp-md, "max") {
+                padding-bottom: 40px;
+            }
         }
 
         &__btn{
@@ -228,7 +271,11 @@
         }
 
         &__avatar{
-            //padding-right: 28px;
+            padding-right: 25px;
+
+            @include create-mq($grid__bp-md, "max") {
+                padding-right: 0;
+            }            
 
             img {
                 width: 100px;
@@ -244,6 +291,9 @@
         }
 
          &__author {
+            @include create-mq($grid__bp-md, "max") {
+                text-align: center;
+            }
             p {
                 font-size: 18px;
                 font-weight: 600;
@@ -253,6 +303,11 @@
 
         &__data {
             padding-left: 15px;
+
+            @include create-mq($grid__bp-md, "max") {
+                padding-left: 0;
+                text-align: center;
+            }
             p {
                 color: $grey-lighter-color;
                 font-size: 16px;
@@ -297,7 +352,14 @@
 
 .related-posts{
     color: $dark-black-color;
-    margin-top:160px;
+    margin-top: 160px;
+
+    &__item {
+        @include create-mq($grid__bp-md, "max") {
+            padding-bottom: 50px;
+        }
+    }
+
     &__name{
         @at-root {
             p#{&} {
@@ -311,9 +373,17 @@
 
     &__block{
         padding-right:10px;
+
+        @include create-mq($grid__bp-md, "max") {
+            padding-right: 0;
+        }
         &.last{
-            padding-right:0;
-            padding-left:10px;
+            padding-right: 0;
+            padding-left: 10px;
+
+            @include create-mq($grid__bp-md, "max") {
+                padding-left: 0;
+            }
         }
     }
     > .row:first-child{
@@ -337,6 +407,11 @@
         font-weight: 400;
         span{
             color: $grey-lighter-color;
+        }
+
+        @include create-mq($grid__bp-md, "max") {
+            line-height: 30px;
+            padding-top: 10px;
         }
     }
     &__image{
@@ -379,8 +454,13 @@ img { max-width: 100%; }
     border-radius: 8px;
     background-color: $white-color;
     margin-top: 60px;
+    
     &__container{
         max-width: 530px;
+
+        @include create-mq($grid__bp-md, "max") {
+            @include content-indent;
+        }
     }
     h3 {
         font-size: 28px;
@@ -400,11 +480,16 @@ img { max-width: 100%; }
         font-weight: 600;
         margin-top:35px;
 
+        @include create-mq($grid__bp-md, "max") {
+            text-align: center;
+        }
+
         button{
             background-color: $pink-color;
-            padding: 17px 30px 20px 31px;
+            padding: 20px 30px;
             border-radius: 40px;
             color: $white-color;
+            border: 0;
             cursor: pointer;
             &:hover{
                 background-color: $purple-color;

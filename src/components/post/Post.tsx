@@ -34,7 +34,7 @@ export default class Post extends React.Component<IProps, IState> {
 
 
                             <div className="row" >
-                                <div className="socials col-md-1" >
+                                <div className="socials col-12 col-md-1" >
                                     <div className="socials__item">
                                         <a href="#"><i className="fa fa-facebook" aria-hidden="true"></i></a>
                                     </div>
@@ -85,7 +85,7 @@ export default class Post extends React.Component<IProps, IState> {
                                     </div>
                                 </div>
 
-                                <div className="social-actions col-md-1" >
+                                <div className="social-actions col-md-1 col-12" >
                                     <div className="social-actions__item">
                                         <a href=""><i className="fa fa-heart" aria-hidden="true"></i></a>
                                         <p>12 k</p>
@@ -118,7 +118,7 @@ export default class Post extends React.Component<IProps, IState> {
 
                                 <div className="row">
                                     
-                                    <div className="col-md-6">
+                                    <div className="col-md-6 related-posts__item">
                                         <div className="related-posts__block">
                                             <img className="related-posts__image" src={post_image} alt="related-posts_image" />
                                             <address className="related-posts__address"><span>BY</span> TOMAS LAURINAVICIUS <span>IN</span> DESIGN PROCESS</address>
@@ -127,7 +127,7 @@ export default class Post extends React.Component<IProps, IState> {
                                         </div>
                                     </div>
 
-                                    <div className="col-md-6">
+                                    <div className="col-md-6 related-posts__item">
                                         <div className="related-posts__block last">
                                         <img className="related-posts__image" src={post_image} alt="related-posts_image" />
                                             <address className="related-posts__address"><span>BY</span> TOMAS LAURINAVICIUS <span>IN</span> DESIGN PROCESS</address>
@@ -160,81 +160,71 @@ export default class Post extends React.Component<IProps, IState> {
 
 
                                 <div className="row comments__item">
-                                    <div className="col-md-12">
-                                        <div  className="row" >
+                                    <div className="col-md-2">
+                                        <div className="comments__avatar">
+                                            <img src={post_team} alt="post_team" />
+                                        </div>
+                                    </div>
+                                    
 
-                                            <div className="col-md-2">
-                                                <div className="comments__avatar">
-                                                    <img src={post_team} alt="post_team" />
+                                    <div className="col-md-10 comments__right-block">
+                                        <div className="row">
+                                            <div className="col-12 col-md-3">
+                                                <div className="comments__author">
+                                                    <p>Brian Jackson</p>
                                                 </div>
                                             </div>
-                                            
 
-                                            <div className="col-md-10 comments__right-block">
-                                                <div className="row">
-                                                    <div className="col-md-3">
-                                                        <div className="comments__author">
-                                                            <p>Brian Jackson</p>
-                                                        </div>
-                                                    </div>
-
-                                                    <div className="col-md-7">
-                                                        <div className="comments__data">
-                                                            <p>December 14, 2017 at 5:13 pm</p>
-                                                        </div>
-                                                    </div>
-
-                                                    <div className="col-md-2 comments__reply">
-                                                        <button type="button" className="btn-reply">Reply</button>
-                                                    </div>
+                                            <div className="col-md-7 col-12">
+                                                <div className="comments__data">
+                                                    <p>December 14, 2017 at 5:13 pm</p>
                                                 </div>
+                                            </div>
 
-                                                <div className="row">
-                                                    <div className="col-md-10">
-                                                        <div className="comments__description">
-                                                            <p>I think, you forgot to mention a very good one:
-                                                            Thrive architect from thrivethemes. That thing is pretty powerful.</p>
-                                                        </div>
-                                                    </div>
+                                            <div className="col-12 col-md-2 comments__reply">
+                                                <button type="button" className="btn-reply">Reply</button>
+                                            </div>
+                                        </div>
+
+                                        <div className="row">
+                                            <div className="col-md-10">
+                                                <div className="comments__description">
+                                                    <p>I think, you forgot to mention a very good one:
+                                                    Thrive architect from thrivethemes. That thing is pretty powerful.</p>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div>                                    
                                 </div>
 
                                 <div className="row comments__item comments__item--reply">
-                                    <div className="col-md-12">
-                                        <div  className="row" >
+                                    <div className="col-md-2 col-md-offset-2">
+                                        <div className="comments__avatar">
+                                            <img src={post_team} alt="post_team" />
+                                        </div>
+                                    </div>
+                                    
 
-                                            <div className="col-md-2">
-                                                <div className="comments__avatar">
-                                                    <img src={post_team} alt="post_team" />
+                                    <div className="col-md-8 comments__right-block">
+                                        <div className="row">
+                                            <div className="col-md-3 col-12">
+                                                <div className="comments__author">
+                                                    <p>Sean Scott</p>
                                                 </div>
                                             </div>
-                                            
 
-                                            <div className="col-md-10 comments__right-block">
-                                                <div className="row">
-                                                    <div className="col-md-3">
-                                                        <div className="comments__author">
-                                                            <p>Sean Scott</p>
-                                                        </div>
-                                                    </div>
-
-                                                    <div className="col-md-7">
-                                                        <div className="comments__data">
-                                                            <p>December 14, 2017 at 5:13 pm</p>
-                                                        </div>
-                                                    </div>
-
+                                            <div className="col-md-7 col-12">
+                                                <div className="comments__data">
+                                                    <p>December 14, 2017 at 5:13 pm</p>
                                                 </div>
+                                            </div>
 
-                                                <div className="row">
-                                                    <div className="col-md-10">
-                                                        <div className="comments__description">
-                                                            <p>Thanks Brian! We have updated the above post. You are correct, their page builder has both a free and a premium version.</p>
-                                                        </div>
-                                                    </div>
+                                        </div>
+
+                                        <div className="row">
+                                            <div className="col-md-10">
+                                                <div className="comments__description">
+                                                    <p>Thanks Brian! We have updated the above post. You are correct, their page builder has both a free and a premium version.</p>
                                                 </div>
                                             </div>
                                         </div>
