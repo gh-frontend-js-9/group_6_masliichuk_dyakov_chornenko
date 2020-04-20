@@ -35,7 +35,26 @@ a {
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    
+    &--plain {
+      position: relative;
 
+      .header__logo img,
+      .header__search img {
+        filter: invert(100%); 
+      }
+
+      .header__nav {
+        ul li a {
+          color:$black-color;
+
+          &:hover {
+            color:$white-color;
+          }
+        }
+      }
+    }
+    
     @include create-mq($grid__bp-lg, "max") {
         padding-top: 20px;
 
