@@ -7,17 +7,30 @@ import {BlogNews} from "./components/blognews";
 import Post from './components/post/Post';
 import Cards from './components/cards/Cards';
 
+import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
+
 function App() {
   return (
-    <div className="App">
+    <Router>
 
-      <Header plain={false} />
-      <Hero/>
-      <Cards/>
-      <BlogNews/>
+
+      <Switch>
+        <Route exact path="/">
+          <Header plain={false} />
+          <Hero/>
+          <Cards/>
+          <BlogNews/>
+        </Route>
+        <Route path="/post">
+          <Header plain={true} />
+          <Post />
+        </Route>
+        
+      </Switch>
+
       <Footer/>
       
-    </div>
+    </Router>
   );
 }
 

@@ -1,6 +1,7 @@
 import React, { SyntheticEvent } from 'react';
 import logo from './../../assets/images/header/logo.png';
 import search from './../../assets/images/header/search-icon.png';
+import {Link} from "react-router-dom";
 
 interface IProps {
     plain: boolean;
@@ -18,8 +19,8 @@ export default class Header extends React.Component<IProps, IState> {
         this.state = {
             isOpen: false,
             menuItems: [
-                { title: 'Home', url: 'http://google.com' },
-                { title: 'About', url: '#' },
+                { title: 'Home', url: '/' },
+                { title: 'Post', url: '/post' },
             ]
         };
     }
@@ -39,14 +40,14 @@ export default class Header extends React.Component<IProps, IState> {
                 <div className={ this.props.plain ? 'header header--plain' : 'header' }>
                     <div className="header__left">
                         <div className="header__logo">
-                            <a href="#"><img src={logo} alt="logo" /></a>
+                            <Link to="/"><img src={logo} alt="logo" /></Link>
                         </div>
 
                         <div className={this.state.isOpen ? 'header__nav header__nav--open' : 'header__nav'}>
                             <ul>
                                 {this.state.menuItems.map((item: any, index) => {
                                     return <li key={index}>
-                                        <a href={item.url} >{item.title}</a>
+                                        <Link to={item.url}>{item.title}</Link>
                                     </li>
                                 })}
                             </ul>
