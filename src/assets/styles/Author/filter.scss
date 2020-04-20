@@ -20,9 +20,17 @@ button {
   color: #111210;
   font-size: 14px;
   margin: 0;
+
 }
 }
 .button-filter-icon {
   margin-left: 13px;
   color:  #979797;
+}
+button:hover {
+  background-color: #9283e0;
+  color: white;
+  .button-filter-icon {
+    color: white;
+  }
 }

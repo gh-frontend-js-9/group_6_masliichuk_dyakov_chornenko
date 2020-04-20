@@ -9,8 +9,7 @@
   background-color: #ffffff;
 
   @include create-mq($grid__bp-xl, "max") {
-    width: 75%;
-    height: 50%;
+    display: none;
   }
   @include create-mq($grid__bp-lg, "max") {
     display: none;
@@ -25,30 +24,35 @@
   font-size: 16px;
   font-weight: 700;
 }
- .react-calendar__navigation__prev2-button {
+
+.react-calendar__navigation__prev2-button {
   display: none;
 }
- .react-calendar__navigation__next2-button {
-   display: none;
- }
- .react-calendar__navigation__prev-button {
-   display: block;
-   width:32px;
-   height: 32px;
-   border-radius: 50%;
-   background-color: #e4e4e4 !important;
-   opacity: 0.5;
-   min-width: 32px !important;
- }
- .react-calendar__navigation__next-button {
-   display: block;
-   width:32px;
-   height: 32px;
-   border-radius: 50%;
-   background-color: #e4e4e4 !important;
-   opacity: 0.5;
-   min-width: 32px !important;
- }
+
+.react-calendar__navigation__next2-button {
+  display: none;
+}
+
+.react-calendar__navigation__prev-button {
+  display: block;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #e4e4e4 !important;
+  opacity: 0.5;
+  min-width: 32px !important;
+}
+
+.react-calendar__navigation__next-button {
+  display: block;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #e4e4e4 !important;
+  opacity: 0.5;
+  min-width: 32px !important;
+}
+
 .react-calendar__month-view__weekdays__weekday {
   width: 16px;
   font-family: "Open Sans";
@@ -63,10 +67,12 @@
     text-decoration: none !important;
   }
 }
+
 .react-calendar__month-view__days__day--neighboringMonth {
   opacity: 0.3;
 
 }
+
 .container-calendar .react-calendar__month-view__days__day--weekend abbr {
   color: #7c86a2;
 }

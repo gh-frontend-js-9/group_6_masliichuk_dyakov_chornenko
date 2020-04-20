@@ -1,24 +1,22 @@
-.container-search{
+.container-search {
   width: 378px;
   height: 83px;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
   border-radius: 8px;
   background-color: #ffffff;
   justify-content: space-between;
-  @include create-mq($grid__bp-lg, "max") {
+  @include create-mq($grid__bp-xl, "max") {
     display: none;
   }
 }
 
-.td
-{
+.td {
   display: table-cell;
   vertical-align: middle;
 }
 
 
-input[type="text"]
-{
+input[type="text"] {
   height: 83px;
   font-family: "Open Sans";
   color: #9b9b9b;
@@ -27,15 +25,15 @@ input[type="text"]
   line-height: 10px;
 }
 
-button
-{
+button {
   position: relative;
   display: block;
   border: none;
   background-color: white;
   margin-left: 129px;
 }
-.fa-search  {
+
+.fa-search {
   display: block;
   height: 40px;
   width: 40px;

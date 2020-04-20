@@ -8,9 +8,9 @@ export const ElementFilter = () => {
         <div className={'container-filter'}>
             <ul>
                 {dataFilter.map(value =>
-      <li className={'filter-button'}>
-                <button>{value.text} <FontAwesomeIcon icon={faTimes} className={'button-filter-icon'}/></button>
-            </li>)}
+                    <li className={'filter-button'} key={value.id}>
+                        <button>{value.text} <FontAwesomeIcon icon={faTimes} className={'button-filter-icon'}/></button>
+                    </li>)}
             </ul>
         </div>
     )

@@ -11,11 +11,11 @@ $container__width: 1180;
 }
 
 $map-grid-props: (
-  "": 0,
-  "-sm": $grid__bp-sm,
-  "-md": $grid__bp-md,
-  "-lg": $grid__bp-lg,
-  "-xl": $grid__bp-xl
+        "": 0,
+        "-sm": $grid__bp-sm,
+        "-md": $grid__bp-md,
+        "-lg": $grid__bp-lg,
+        "-xl": $grid__bp-xl
 );
 
 @mixin create-mq($breakpoint, $min-or-max) {
@@ -67,6 +67,7 @@ $map-grid-props: (
 .container {
   max-width: $container__width * 1px;
   margin: 0 auto;
+
   &--fluid {
     margin: 0;
     max-width: 100%;

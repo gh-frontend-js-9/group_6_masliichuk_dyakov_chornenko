@@ -2,14 +2,20 @@
   height: 317px;
   width: 378px;
   padding-top: 20px;
+  line-height: 46px;
   @include create-mq($grid__bp-xl, "max") {
-    width: 100%;
+    width: 80%;
+    padding-left: 10%;
+    .slick-prev, .slick-next{
+      display: none;
+    }
   }
 }
 
 div .slick-dots {
   display: none !important;
 }
+
 
 .slick-slide {
   width: 197px !important;
@@ -36,8 +42,8 @@ div .slick-dots {
   margin-left: -50px;
   width: 32px;
   height: 32px;
-  background-image: url("../../images/newpage/left-arrow.png");
+  color: rgba(0, 0, 0, 0) !important;
+  background-image: url("../../images/newpage/right-arrow_(1).png");
   background-repeat: no-repeat;
-  //background-color: #ff5480;
 
 }

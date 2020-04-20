@@ -2,8 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import {faArrowLeft, faChevronRight} from "@fortawesome/free-solid-svg-icons";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+
 
 class SimpleSlider extends React.Component {
     render() {
@@ -13,9 +12,7 @@ class SimpleSlider extends React.Component {
             infinite: true,
             speed: 500,
             slidesToShow: 1,
-            slidesToScroll: 1,
-            slickNext: <FontAwesomeIcon icon={faChevronRight}/>,
-            slickPrev: <FontAwesomeIcon icon={faChevronRight}/>,
+            slidesToScroll: 1
         };
         return (
             <div className={'container-slider'}>

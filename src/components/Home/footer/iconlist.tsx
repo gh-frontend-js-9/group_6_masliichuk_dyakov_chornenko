@@ -8,8 +8,8 @@ export const IconList = () => {
         <div className={'footer-item'}>
             <ul className={'footer-list-icon'}>
                 {navigationIconMedia.map(value =>
-                    <li className={'footer-icon'}>
-                        <a href={value.url}>
+                    <li className={'footer-icon'} key={value.id}>
+                        <a href={value.url} >
                             <FontAwesomeIcon icon={value.image} className={'style-icon'}/>
                         </a>
 

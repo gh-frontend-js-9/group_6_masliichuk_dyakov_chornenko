@@ -4,10 +4,15 @@
   border-radius: 8px;
   background-color: #ffffff;
   padding-top: 32px;
-  margin-bottom: 20px;
+  line-height: 20px;
   @include create-mq($grid__bp-lg, "max") {
     width: 100%;
-    margin-top: 20px;
+    margin-bottom: 0;
+    height: 483px;
+
+    .item-popular-post:last-child {
+      display: none;
+    }
   }
 
   h2 {
@@ -16,7 +21,6 @@
     font-size: 18px;
     font-weight: 600;
     letter-spacing: -0.11px;
-    line-height: 30px;
     text-transform: uppercase;
   }
 
@@ -28,13 +32,14 @@
   margin-left: 27px;
   text-align: left;
   height: 80px;
+
+
   @include create-mq($grid__bp-lg, "max") {
-    width: 100%;
+    justify-content: center;
 
   }
 
   div {
-    flex-direction: column;
     margin-right: 20px;
     height: 80px;
     @include create-mq($grid__bp-lg, "max") {
@@ -93,12 +98,81 @@
 }
 
 .container-recentpost {
+
   p {
     font-family: "Open Sans";
     color: #9b9b9b;
     font-size: 16px;
     letter-spacing: -0.1px;
     text-transform: uppercase;
-    margin: 0;
   }
+
+  h2 {
+    margin-top: 0;
+  }
+}
+
+.doubleblock-mobile {
+  @include create-mq($grid__bp-xl, "max") {
+    padding: 12%;
+    display: flex;
+    div {
+      flex-direction: row;
+    }
+    .container-recentpost {
+      margin-left: 3%;
+      height: 483px;
+      padding-bottom: 0;
+      margin-top: 0;
+
+    }
+
+  }
+}
+
+.container-recentpost {
+  width: 378px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  background-color: #ffffff;
+  text-align: left;
+  padding-top: 32px;
+  padding-bottom: 40px;
+  margin-top: 20px;
+  @include create-mq($grid__bp-lg, "max") {
+    display: none;
+  }
+
+  li {
+    margin-left: 31px;
+  }
+
+  h2 {
+    text-align: center;
+    font-family: "Open Sans";
+    color: #111210;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: -0.11px;
+    line-height: 30px;
+    text-transform: uppercase;
+
+  }
+
+  h3 a {
+
+    font-family: "Open Sans";
+    color: #000000;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  h3:first-letter {
+    text-transform: uppercase;
+  }
+
+  a:hover {
+    color: #ff5480;
+  }
+
 }

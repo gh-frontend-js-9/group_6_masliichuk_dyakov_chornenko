@@ -4,6 +4,7 @@ import profile from '../../../assets/images/newpage/backgr.png';
 
 export const ElementAuthor: React.FC = () => {
     return (
+
         <div className={'container-author'}>
             <div>
                 <img src={profile} alt={'profile'}/>
@@ -18,5 +19,6 @@ export const ElementAuthor: React.FC = () => {
             </p>
             <IconList/>
         </div>
+
     )
 };

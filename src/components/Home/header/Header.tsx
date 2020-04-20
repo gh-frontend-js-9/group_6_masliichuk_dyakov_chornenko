@@ -30,7 +30,7 @@ export default class Header extends React.Component<IProps, IState> {
                                 <li><a href="../../Author">Popular</a></li>
                                 <li><a href={"../../Author"}>New</a></li>
                                 <li><a href="../../Author">Reading list</a></li>
-                                <li><a href="../../Author">Topics</a></li>
+                                <li><a href="../../Topics">Topics</a></li>
                                 <li><a href="../../Author">Subscribe</a></li>
                             </ul>
                         </div>

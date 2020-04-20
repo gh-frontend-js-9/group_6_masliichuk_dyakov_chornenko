@@ -7,16 +7,12 @@ interface State {
 }
 
 export const ElementRecentPost: React.FC = () => {
-    const dispatch = useDispatch();
     const posts = useSelector((state: State) => state.posts.fetchedPosts);
 
-    if (!posts.length) {
-        dispatch(fetchPosts());
-    }
     return <div className={'container-recentpost'}><h2>RECENT POST</h2>
-        <ul>{posts.slice(0, 4).map((post: any) => <li className={'item-recent-post'}>
+        <ul>{posts.slice(0, 4).map((post: any) => <li className={'item-recent-post'} key={post.id}>
             <p>INSPIRATION</p>
-            <h3><a href={'post/Post'} key={post.id}>{post.title}</a></h3>
+            <h3><a href={'post/Post'}>{post.title}</a></h3>
         </li>)}</ul>
     </div>
 };
