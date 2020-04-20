@@ -12,7 +12,13 @@
   @include create-mq($grid__bp-lg, "max") {
     padding: 0;
     margin: 0;
+  }
 
+  @include create-mq($grid__bp-md, "max") {
+    > div:last-child {
+      width: 100%;
+      text-align: center;
+    }
   }
 }
 
