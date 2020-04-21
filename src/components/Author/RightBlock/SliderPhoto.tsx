@@ -9,6 +9,7 @@ class SimpleSlider extends React.Component {
 
         const settings = {
             dots: true,
+            container: 'data-simple-slider',
             infinite: true,
             speed: 500,
             slidesToShow: 1,
@@ -17,40 +18,43 @@ class SimpleSlider extends React.Component {
         return (
             <div className={'container-slider'}>
                 <Slider {...settings}>
-                    <div className={'slide-style'}>
+                    <div className={'data-simple-slider'}>
                         <img
                             src={'https://besthqwallpapers.com/Uploads/23-11-2019/112658/thumb2-neon-light-background-neon-lasers-bright-purple-background-neon-backgrounds.jpg'}
                             alt={'ITstep'}/>
+                            <h4 className={'slider-title-home'}>UI design</h4>
                     </div>
-                    <div>
-                        <img
-                            src={'https://besthqwallpapers.com/Uploads/23-11-2019/112658/thumb2-neon-light-background-neon-lasers-bright-purple-background-neon-backgrounds.jpg'}
-                            alt={'ITstep'}/>
+                    <div className={'data-simple-slider'}>
+                            <img
+                                src={'https://besthqwallpapers.com/Uploads/23-11-2019/112658/thumb2-neon-light-background-neon-lasers-bright-purple-background-neon-backgrounds.jpg'}
+                                alt={'ITstep'}/>
+                            <h4 className={'slider-title-home'}>UI design</h4>
                     </div>
-                    <div>
-                        <img
-                            src={'https://besthqwallpapers.com/Uploads/23-11-2019/112658/thumb2-neon-light-background-neon-lasers-bright-purple-background-neon-backgrounds.jpg'}
-                            alt={'ITstep'}/>
+                    <div className={'data-simple-slider'}>
+                            <img
+                                src={'https://besthqwallpapers.com/Uploads/23-11-2019/112658/thumb2-neon-light-background-neon-lasers-bright-purple-background-neon-backgrounds.jpg'}
+                                alt={'ITstep'}/>
+                        <h4 className={'slider-title-home'}>UI design</h4>
                     </div>
-                    <div>
-                        <img
-                            src={'https://besthqwallpapers.com/Uploads/23-11-2019/112658/thumb2-neon-light-background-neon-lasers-bright-purple-background-neon-backgrounds.jpg'}
-                            alt={'ITstep'}/>
+                    <div className={'data-simple-slider'}>
+                            <img
+                                src={'https://besthqwallpapers.com/Uploads/23-11-2019/112658/thumb2-neon-light-background-neon-lasers-bright-purple-background-neon-backgrounds.jpg'}
+                                alt={'ITstep'}/>
+                        <h4 className={'slider-title-home'}>UI design</h4>
                     </div>
-                    <div>
+                    <div className={'data-simple-slider'}>
                         <img
                             src={'https://besthqwallpapers.com/Uploads/23-11-2019/112658/thumb2-neon-light-background-neon-lasers-bright-purple-background-neon-backgrounds.jpg'}
                             alt={'ITstep'}/>
+                        <h4 className={'slider-title-home'}>UI design</h4>
                     </div>
-                    <div>
+                    <div className={'data-simple-slider'}>
                         <img
                             src={'https://besthqwallpapers.com/Uploads/23-11-2019/112658/thumb2-neon-light-background-neon-lasers-bright-purple-background-neon-backgrounds.jpg'}
                             alt={'ITstep'}/>
+                        <h4 className={'slider-title-home'}>UI design</h4>
                     </div>
                 </Slider>
-                <h2>
-                    Essentials
-                </h2>
             </div>
         );
     }
