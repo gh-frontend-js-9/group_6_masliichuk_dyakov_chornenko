@@ -1,6 +1,5 @@
 import React from "react";
-import {useDispatch, useSelector} from "react-redux";
-import {fetchPosts} from "../../redux/action/action";
+import { useSelector} from "react-redux";
 
 interface State {
     posts: any

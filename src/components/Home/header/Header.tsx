@@ -1,4 +1,4 @@
-import React, { SyntheticEvent } from 'react';
+import React from 'react';
 import logo from '../../../assets/images/header/logo.png';
 import search from '../../../assets/images/header/search-icon.png';
 
@@ -10,9 +10,9 @@ interface IState {
 
 export default class Header extends React.Component<IProps, IState> {
 
-    constructor(props: any) {
-        super(props);
-        };
+    // constructor(props: any) {
+    //     super(props);
+    //     };
 
 
 

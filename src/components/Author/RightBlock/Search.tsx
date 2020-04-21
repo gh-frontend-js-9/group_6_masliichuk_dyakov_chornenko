@@ -1,4 +1,4 @@
-import React, {Component} from "react";
+import React from "react";
 import {bindActionCreators} from "redux";
 import {connect} from "react-redux";
 
@@ -35,7 +35,7 @@ class SearchExample extends React.Component <any, ISearch, any> {
                                                    onChange={this.handleChange}/></div>
                         <div className="td">
                             <button type="submit">
-                                <div><img src={iconsearch}/></div>
+                                <div><img src={iconsearch} alt={'search'}/></div>
                             </button>
                         </div>
                     </div>
@@ -43,7 +43,7 @@ class SearchExample extends React.Component <any, ISearch, any> {
                 <div className={'window-results-search'}>
                     <ul>
                         {libraries.map((i: any) => {
-                            return <li key={i.id}><a href={'#'}>{i.title}</a></li>;
+                            return <li key={i.id}><a href={'/Post'}>{i.title}</a></li>;
                         })}
                     </ul>
                 </div>
@@ -58,7 +58,7 @@ class SearchExample extends React.Component <any, ISearch, any> {
                                                    onChange={this.handleChange}/></div>
                         <div className="td">
                             <button type="submit">
-                                <div><img src={iconsearch}/></div>
+                                <div><img src={iconsearch} alt={'search'}/></div>
                             </button>
                         </div>
                     </div>

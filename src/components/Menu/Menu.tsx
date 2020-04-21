@@ -7,7 +7,7 @@ export const Menu = () => {
         <div>
             <div className={'header-menu container'}>
                 <ul className={'menu-header'}>
-                    <li><img src={logo}/></li>
+                    <li><img src={logo} alt={'logo-company'}/></li>
                     <li className={'item-menu'}><a href="../Topics">Popular</a></li>
                     <li className={'item-menu'}><a href={"../Author"}>New</a></li>
                     <li className={'item-menu'}><a href="../Topics">Reading list</a></li>
@@ -25,7 +25,7 @@ export const Menu = () => {
 export const FieldSearch = () => {
     return(
         <div className={'container'}>
-            <div className={'field-top-search'}><img src={iconsearch}/> </div>
+            <div className={'field-top-search'}><img src={iconsearch} alt={'search'}/> </div>
         </div>
     )
 }

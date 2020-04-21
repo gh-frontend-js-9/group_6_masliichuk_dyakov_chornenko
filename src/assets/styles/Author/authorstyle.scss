@@ -1,5 +1,6 @@
 .App {
   background-color: #f9f9fb;
+
 }
 
 .container-post {
@@ -26,8 +27,8 @@
 
 .container-news {
   display: flex;
-  color: #ff5480;
-  font-family: "Open Sans";
+  color: #111210;
+  font-family: 'Open Sans', sans-serif;
   @include create-mq($grid__bp-xl, "max") {
     margin-left: $indent;
     margin-right: $indent;
@@ -43,7 +44,6 @@
 .author-post {
   width: 377px;
   height: 25px;
-  font-family: "Open Sans";
   color: #111210;
   font-size: 16px;
   letter-spacing: -0.1px;
@@ -59,7 +59,6 @@
 
 .container-author {
   p {
-    font-family: "Open Sans";
     color: #111210;
     font-size: 16px;
     letter-spacing: -0.1px;
@@ -97,6 +96,9 @@
   margin-bottom: 20px;
   @include create-mq($grid__bp-xl, "max") {
     width: 100%;
+  }
+  p{
+    padding-bottom: 32px;
   }
 
 }
@@ -142,16 +144,17 @@
 }
 
 .post-item-title a {
-  font-family: "Open Sans";
   color: black;
   font-size: 36px;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: -0.22px;
   line-height: 46px;
 
 
 }
-
+.post-item-title a:hover {
+  color: #ff5480;
+}
 .post-item-title:first-letter {
   text-transform: uppercase;
 }
@@ -167,7 +170,6 @@
 }
 
 .container-subscribe h2 {
-  font-family: "Open Sans";
   color: #111210;
   font-size: 48px;
   font-weight: 600;
@@ -176,7 +178,6 @@
 }
 
 .container-subscribe p {
-  font-family: "Open Sans";
   color: #111210;
   font-size: 18px;
   font-weight: 600;
@@ -197,7 +198,6 @@
     border-top-left-radius: 40px;
     border: none;
     background-color: #ffffff;
-    font-family: "Open Sans";
     color: #111210;
     font-size: 16px;
     letter-spacing: -0.1px;
@@ -206,11 +206,10 @@
 
   button {
     width: 170px;
-    height: 70px;
+    height: 72px;
     border: none;
     border-radius: 40px;
     background-color: #ff5480;
-    font-family: "Open Sans";
     color: #ffffff;
     font-size: 24px;
     font-weight: 600;
@@ -288,7 +287,6 @@
     border-radius: 40px;
     background-color: #ff5480;
     margin-left: -42px;
-    font-family: "Open Sans";
     color: #ffffff;
     font-size: 14px;
     font-weight: 600;
@@ -300,7 +298,6 @@
 
 .container-social-media {
   width: 378px;
-  font-family: "Open Sans";
   color: #111210;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
   border-radius: 8px;
@@ -328,14 +325,21 @@
   margin-bottom: 20px;
   margin-top: 20px;
   justify-content: center;
+
+  @include create-mq($grid__bp-xl, "max") {
+    display: flex;
+    margin-top: 0;
+    margin-right: 3%;
+  }
+
   @include create-mq($grid__bp-lg, "max") {
     display: none;
   }
 
+
 }
 
 .container-adsbanner h2 {
-  font-family: "Open Sans";
   margin-top: 140px;
   color: #111210;
   font-size: 18px;

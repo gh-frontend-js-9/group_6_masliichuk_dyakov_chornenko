@@ -17,10 +17,8 @@
   }
 
   h2 {
-    font-family: "Open Sans";
     color: #111210;
     font-size: 18px;
-    font-weight: 600;
     letter-spacing: -0.11px;
     text-transform: uppercase;
   }
@@ -60,17 +58,15 @@
     padding-top: 2px;
     max-width: 241px;
     height: 53px;
-    font-family: "Open Sans";
     color: #000000;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 500;
 
     @include create-mq($grid__bp-lg, "max") {
     }
 
     h3 {
       width: 241px;
-      font-family: "Open Sans";
       font-size: 16px;
       font-weight: 600;
       margin: 0;
@@ -101,11 +97,12 @@
 .container-recentpost {
 
   p {
-    font-family: "Open Sans";
     color: #9b9b9b;
     font-size: 16px;
     letter-spacing: -0.1px;
+    font-weight: 500;
     text-transform: uppercase;
+    margin-bottom: 0;
   }
 
   h2 {
@@ -147,10 +144,12 @@
   li {
     margin-left: 31px;
   }
+  h3 {
+    margin-top: 0;
+  }
 
   h2 {
     text-align: center;
-    font-family: "Open Sans";
     color: #111210;
     font-size: 18px;
     font-weight: 600;
@@ -161,8 +160,6 @@
   }
 
   h3 a {
-
-    font-family: "Open Sans";
     color: #000000;
     font-size: 16px;
     font-weight: 600;
