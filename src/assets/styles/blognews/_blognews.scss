@@ -16,6 +16,9 @@
     padding-top: 20px;
     flex-direction: column;
     text-align: center;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
   }
   a {
     text-decoration: none;
@@ -35,19 +38,21 @@
     }
   }
 }
-
+.col-article{
+  margin-bottom: 50px;
+}
 .col-article:first-child {
   padding-right: 23px;
-  @include create-mq($grid__bp-md, "max") {
-    display: none;
-  }
+
 }
 
 .article-author {
   max-width: 24.313rem;
   text-transform: uppercase;
   @include create-mq($grid__bp-lg, "max") {
-    max-width: 100%;
+    max-width: 65%;
+    margin-left: 17%;
+    margin-right: 17%;
   }
 }
 

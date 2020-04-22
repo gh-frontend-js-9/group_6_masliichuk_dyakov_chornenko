@@ -17,6 +17,7 @@
 
 
 input[type="text"] {
+  width: 265px;
   height: 83px;
   font-family: "Open Sans";
   color: #9b9b9b;
@@ -30,7 +31,7 @@ button {
   display: block;
   border: none;
   background-color: white;
-  margin-left: 129px;
+ // margin-left: 129px;
 }
 
 .fa-search {
