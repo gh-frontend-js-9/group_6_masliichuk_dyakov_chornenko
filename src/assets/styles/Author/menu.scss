@@ -1,6 +1,6 @@
 .header-menu {
   display: flex;
-  height: 160px;
+  height: 136px;
   justify-content: space-between;
 
   .menu-header {
@@ -32,6 +32,11 @@
   }
 }
 
+.header-menu li:first-child:hover {
+  border-radius: 10px;
+  background-color: #f9f9fb;
+
+}
 
 .image-inprogress {
   text-align: center;
@@ -42,7 +47,7 @@
   display: flex;
   flex-direction: row-reverse;
   margin-top: 58px;
-  margin-bottom: 135px;
+  margin-bottom: 135-24px;
   color: #111210;
   @include create-mq($grid__bp-xl, "max") {
     display: none;

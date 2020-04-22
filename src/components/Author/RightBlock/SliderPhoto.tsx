@@ -22,24 +22,24 @@ class SimpleSlider extends React.Component {
                         <img
                             src={'https://besthqwallpapers.com/Uploads/23-11-2019/112658/thumb2-neon-light-background-neon-lasers-bright-purple-background-neon-backgrounds.jpg'}
                             alt={'ITstep'}/>
-                            <h4 className={'slider-title-home'}>UI design</h4>
+                        <h4 className={'slider-title-home'}>UI design</h4>
                     </div>
                     <div className={'data-simple-slider'}>
-                            <img
-                                src={'https://besthqwallpapers.com/Uploads/23-11-2019/112658/thumb2-neon-light-background-neon-lasers-bright-purple-background-neon-backgrounds.jpg'}
-                                alt={'ITstep'}/>
-                            <h4 className={'slider-title-home'}>SEO</h4>
+                        <img
+                            src={'https://besthqwallpapers.com/Uploads/23-11-2019/112658/thumb2-neon-light-background-neon-lasers-bright-purple-background-neon-backgrounds.jpg'}
+                            alt={'ITstep'}/>
+                        <h4 className={'slider-title-home'}>SEO</h4>
                     </div>
                     <div className={'data-simple-slider'}>
-                            <img
-                                src={'https://besthqwallpapers.com/Uploads/23-11-2019/112658/thumb2-neon-light-background-neon-lasers-bright-purple-background-neon-backgrounds.jpg'}
-                                alt={'ITstep'}/>
+                        <img
+                            src={'https://besthqwallpapers.com/Uploads/23-11-2019/112658/thumb2-neon-light-background-neon-lasers-bright-purple-background-neon-backgrounds.jpg'}
+                            alt={'ITstep'}/>
                         <h4 className={'slider-title-home'}>Popular</h4>
                     </div>
                     <div className={'data-simple-slider'}>
-                            <img
-                                src={'https://besthqwallpapers.com/Uploads/23-11-2019/112658/thumb2-neon-light-background-neon-lasers-bright-purple-background-neon-backgrounds.jpg'}
-                                alt={'ITstep'}/>
+                        <img
+                            src={'https://besthqwallpapers.com/Uploads/23-11-2019/112658/thumb2-neon-light-background-neon-lasers-bright-purple-background-neon-backgrounds.jpg'}
+                            alt={'ITstep'}/>
                         <h4 className={'slider-title-home'}>Essentials</h4>
                     </div>
                     <div className={'data-simple-slider'}>

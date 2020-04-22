@@ -19,6 +19,7 @@
   letter-spacing: -0.07px;
   line-height: 58px;
   margin: 0;
+  font-weight: 500;
 
   span {
     color: #c8c8c8;
@@ -49,6 +50,7 @@
   letter-spacing: -0.1px;
   line-height: 46px;
   text-transform: uppercase;
+  margin: 0;
   @include create-mq($grid__bp-xl, "max") {
     margin-left: 10%;
     margin-right: $indent;
@@ -63,6 +65,11 @@
     font-size: 16px;
     letter-spacing: -0.1px;
     line-height: 24px;
+    font-weight: 600;
+  }
+
+  h2 {
+    font-weight: 600;
   }
 }
 
@@ -97,7 +104,8 @@
   @include create-mq($grid__bp-xl, "max") {
     width: 100%;
   }
-  p{
+
+  p {
     padding-bottom: 32px;
   }
 
@@ -152,9 +160,11 @@
 
 
 }
+
 .post-item-title a:hover {
   color: #ff5480;
 }
+
 .post-item-title:first-letter {
   text-transform: uppercase;
 }
@@ -187,6 +197,11 @@
 
 
 .container-subscribe {
+  padding-bottom: 148px;
+  padding-top: 148px;
+  h2 {
+    margin: 0;
+  }
 
   input {
     width: 353px;
