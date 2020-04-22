@@ -6,8 +6,7 @@
   z-index: 4;
 
   @include create-mq($grid__bp-xl, "max") {
-    width: 80%;
-    padding-left: 10%;
+    width: 100%;
     .slick-prev, .slick-next {
       display: none;
     }

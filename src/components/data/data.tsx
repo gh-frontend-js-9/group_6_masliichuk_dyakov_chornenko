@@ -118,12 +118,57 @@ export const typeWebDevelop = [
     {
         id: 2,
         developer: 'JACK LOVICIUS',
-        type: 'INSPIRATION'
+        type: 'UI design'
     },
     {
         id: 3,
         developer: 'TED LAURIN',
-        type: 'FREELANCING'
+        type: 'SEO'
+    },
+    {
+        id: 4,
+        developer: 'TED LAURIN',
+        type: 'Popular'
+    },
+    {
+        id: 5,
+        developer: 'TED LAURIN',
+        type: 'Essentials'
+    },
+    {
+        id: 6,
+        developer: 'TED LAURIN',
+        type: 'UI design'
+    },
+    {
+        id: 7,
+        developer: 'TED LAURIN',
+        type: 'UI design'
+    },
+    {
+        id: 8,
+        developer: 'TED LAURIN',
+        type: 'UI design'
+    },
+    {
+        id: 9,
+        developer: 'TED LAURIN',
+        type: 'UI design'
+    },
+    {
+        id: 10,
+        developer: 'TED LAURIN',
+        type: 'UI design'
+    },
+    {
+        id: 11,
+        developer: 'TED LAURIN',
+        type: 'UI design'
+    },
+    {
+        id: 12,
+        developer: 'TED LAURIN',
+        type: 'UI design'
     }
 ];
 

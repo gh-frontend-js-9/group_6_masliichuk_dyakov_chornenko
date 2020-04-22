@@ -52,8 +52,8 @@
   text-transform: uppercase;
   margin: 0;
   @include create-mq($grid__bp-xl, "max") {
-    margin-left: 10%;
-    margin-right: $indent;
+    width: 100%;
+    text-align: center;
     display: block;
   }
 
@@ -174,11 +174,24 @@
   margin-bottom: 20px;
   text-align: center;
   @include create-mq($grid__bp-xl, "max") {
-    width: 80%;
+    width: 100%;
     padding-top: 25px;
   }
 }
+.container-subscribe form {
+  @include create-mq($grid__bp-xl, "max") {
+    width: 60%;
+    margin-left: 20%;
+  }
 
+  @include create-mq($grid__bp-lg, "max") {
+    margin-left: 15%;
+   }
+  @include create-mq($grid__bp-md, "max") {
+
+    margin-left: 5%;
+  }
+}
 .container-subscribe h2 {
   color: #111210;
   font-size: 48px;

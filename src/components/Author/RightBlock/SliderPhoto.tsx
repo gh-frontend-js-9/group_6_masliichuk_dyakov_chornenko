@@ -54,7 +54,8 @@ class SimpleSlider extends React.Component {
                             alt={'ITstep'}/>
                         <h4 className={'slider-title-home'}>UI design</h4>
                     </div>
-                </Slider>
+
+            </Slider>
             </div>
         );
     }
