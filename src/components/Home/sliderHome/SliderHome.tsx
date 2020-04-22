@@ -8,7 +8,7 @@ export const SliderHome = () => {
                 <h2 className={'cards-title-slider'}>
                     Reading lists
                 </h2>
-                <a className={'cards-view-all-slider'} href={'#'}>View all</a>
+                <a className={'cards-view-all-slider'} href={'/Post'}>View all</a>
             </div>
 
             <div className={'container-slider-home '}>

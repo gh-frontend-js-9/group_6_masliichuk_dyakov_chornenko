@@ -16,9 +16,13 @@
 .slick-slider div {
   div {
     width: 197px;
-    height: 265px;
+    height: 285px;
     margin: 0;
   }
+}
+.slick-initialized .slick-slide {
+  width: 197px !important;
+  height: 225px;
 }
 .container-slider div .slick-dots {
   display: none !important;
@@ -47,6 +51,7 @@
 .container-slider .slick-next:before {
   display: block;
   margin-left: -50px;
+  margin-top: -40px;
   width: 32px;
   height: 32px;
   color: rgba(0, 0, 0, 0) !important;
@@ -61,7 +66,13 @@
 }
 .container-slider-home div {
 width: 1169px;
-
+  @include create-mq($grid__bp-xl, "max") {
+    width: 80%;
+    padding: 0;
+    .slick-prev, .slick-next{
+      display: none;
+    }
+  }
 }
 .cards-title-slider {
   color: #111210;
@@ -88,8 +99,27 @@ width: 1169px;
 
   @include create-mq($grid__bp-xl, "max") {
     width: 80%;
-    padding: 10%;
+   margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+div .slick-slide .slick-cloned {
+  @include create-mq($grid__bp-xl, "max") {
+    padding: 0;
+
+  }
+ }
+
+div .slick-slide {
+  @include create-mq($grid__bp-xl, "max") {
+    padding: 0;
+    text-align: center;
+
+  }
+  }
+div .data-simple-slider {
+  @include create-mq($grid__bp-xl, "max") {
+    padding: 0;
 
   }
 }
-

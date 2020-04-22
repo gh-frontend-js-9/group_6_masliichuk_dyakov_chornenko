@@ -41,11 +41,19 @@ class SearchExample extends React.Component <any, ISearch, any> {
                     </div>
                 </form>
                 <div className={'window-results-search'}>
-                    <ul>
+                    <div>
                         {libraries.map((i: any) => {
-                            return <li key={i.id}><a href={'/Post'}>{i.title}</a></li>;
+
+                            return (
+                                <div className={'item-popular-post'}>
+                                    <div><img
+                                        src={'https://besthqwallpapers.com/Uploads/23-11-2019/112658/thumb2-neon-light-background-neon-lasers-bright-purple-background-neon-backgrounds.jpg'}
+                                        alt={'ITstep'}/>
+                                    </div>
+                                    <div key={i.id}><a href={'/Post'}>{i.title}</a></div>
+                                </div>)
                         })}
-                    </ul>
+                    </div>
                 </div>
             </div>)
         }
