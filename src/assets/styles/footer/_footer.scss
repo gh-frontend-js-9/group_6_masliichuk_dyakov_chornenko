@@ -56,7 +56,7 @@ footer .footer-list-icon {
 
 .footer-site-inform {
   position: initial;
-  color: #9b9b9b;
+  color: $grey-lighter-color;
   font-family: "Open Sans";
   font-size: 0.875rem;
 }
@@ -67,7 +67,7 @@ footer .footer-list-icon {
   width: 20px;
   height: 20px;
   padding-top: 2px;
-  background-color: #9b9b9b;
+  background-color: $grey-lighter-color;
   border-radius: 50px;
   opacity: 0.8;
 
@@ -78,7 +78,7 @@ footer .footer-list-icon {
   width: 37px;
   height: 33px;
   // padding-top: 6px;
-  background-color: #ff5480;
+  background-color: $pink-color;
 }
 .container-social-media li:hover {
   opacity: 0.5;

@@ -21,6 +21,7 @@ export default class Header extends React.Component<IProps, IState> {
             menuItems: [
                 { title: 'Home', url: '/' },
                 { title: 'Post', url: '/post' },
+                { title: 'Author', url: '/Author' },
             ]
         };
     }

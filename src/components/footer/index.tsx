@@ -1,5 +1,5 @@
 import React from "react";
-import logoFooter from '../../../assets/images/footer/logofooter.png';
+import logoFooter from '../../assets/images/footer/logofooter.png';
 import {IconList} from "./iconlist";
 
 export const Footer: React.FC = (props: any) => {

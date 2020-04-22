@@ -1,3 +1,10 @@
+.container-slider {
+
+  @include create-mq($grid__bp-md, "max") {
+    padding-bottom: 40px;
+  } 
+}
+
 .container-slider .slick-slide {
   // margin-left: 21px;
 
@@ -16,7 +23,7 @@
 .container-slider .slide-style {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
   border-radius: 8px;
-  background-color: #ffffff;
+  background-color: $white-color;
 }
 
 .slick-prev, .slick-next {
@@ -64,7 +71,7 @@
 }
 
 .cards-title-slider {
-  color: #111210;
+  color: $dark-black-color;
   font-family: "Open Sans";
   font-size: 2.25rem;
   font-weight: 700;
@@ -76,17 +83,20 @@
 .cards-name-slider {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 53px;
+  padding: 53px 0;
 }
 
 .cards-view-all-slider {
-  color: #111210;
+  color: $dark-black-color;
   font-family: "Open Sans";
   font-size: 1rem;
   letter-spacing: -0.006rem;
   line-height: 2.875rem;
 }
 
+.slider-home {
+  background-color: $grey-color;
+}
 
 .container-slider-home {
   padding-bottom: 100px;

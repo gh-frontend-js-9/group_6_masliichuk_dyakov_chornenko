@@ -36,24 +36,7 @@ a {
     justify-content: space-between;
     width: 100%;
     
-    &--plain {
-      position: relative;
 
-      .header__logo img,
-      .header__search img {
-        filter: invert(100%); 
-      }
-
-      .header__nav {
-        ul li a {
-          color:$black-color;
-
-          &:hover {
-            color:$white-color;
-          }
-        }
-      }
-    }
     
     @include create-mq($grid__bp-lg, "max") {
         padding-top: 20px;
@@ -79,12 +62,12 @@ a {
     }
     
     &__hamburger {
-        div {
-            width: 35px;
-            height: 3px;
-            background-color: $white-color;
-            margin: 6px 0;
-        }
+      div {
+        width: 35px;
+        height: 3px;
+        background-color: $white-color;
+        margin: 6px 0;
+      }
     }
 
     &__left {
@@ -138,7 +121,7 @@ a {
           padding-right: 0;
         }
         a {
-          color: #ffffff;
+          color: $white-color;
           padding: 5px 20px 8px 18px;
         }
         :hover {
@@ -148,5 +131,39 @@ a {
         }
       }
     }
+
+    &--plain {
+      position: relative;
+
+      .header__logo img,
+      .header__search img {
+        filter: invert(100%); 
+      }
+
+
+      .header__hamburger {
+        div {
+          
+          @include create-mq($grid__bp-lg, "max") {
+            background-color: $black-color;
+          }
+        }
+      }      
+
+      .header__nav {
+        ul li a {
+          color:$black-color;
+
+          @include create-mq($grid__bp-md, "max") {
+            color: $white-color;
+          }
+
+          &:hover {
+            color:$white-color;
+          }
+        }
+      }
+    }
+        
   }
 }

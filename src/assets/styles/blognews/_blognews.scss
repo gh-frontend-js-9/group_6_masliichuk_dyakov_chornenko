@@ -1,6 +1,6 @@
 .article-container {
   position: relative;
-  background-color: #f9f9fb;
+  background-color: $grey-color;
   @include create-mq($grid__bp-xl, "max") {
     padding-left: $indent;
     padding-right: $indent;
@@ -20,7 +20,7 @@
   }
   a {
     text-decoration: none;
-    color: #111210;
+    color: $dark-black-color;
   }
   a:hover {
     opacity: 0.5;
@@ -29,7 +29,7 @@
     max-width: 573px;
     height: 358px;
     border-radius: 8px;
-    background-color: #ffffff;
+    background-color: $white-color;
     margin-bottom: 20px;
     @include create-mq($grid__bp-md, "max") {
       height: auto;
@@ -38,9 +38,11 @@
   }
 }
 
-.col-article:first-child {
-  padding-right: 23px;
+.col-article {
   padding-bottom: 40px;
+  &:first-child {
+    padding-right: 23px;
+  }
 }
 
 .article-author {
@@ -53,13 +55,13 @@
 }
 
 .style-prepositions-article {
-  color: #9b9b9b;
+  color: $grey-lighter-color;
 }
 
 .article-title {
   width: 35rem;
   margin: 0;
-  color: #111210;
+  color: $dark-black-color;
   font-family: "Open Sans";
   font-size: 1.75rem;
   font-weight: 700;
@@ -73,7 +75,7 @@
 .article-content {
   width: 32.688rem;
   opacity: 0.7;
-  color: #9b9b9b;
+  color: $grey-lighter-color;
   font-size: 1rem;
   letter-spacing: -0.006rem;
   line-height: 2rem;

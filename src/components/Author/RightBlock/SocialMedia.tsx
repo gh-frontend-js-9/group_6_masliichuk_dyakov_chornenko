@@ -1,6 +1,6 @@
 import React from "react";
 
-import {IconList} from "../../Home/footer/iconlist";
+import {IconList} from "../../footer/iconlist";
 
 export const SocialMedia = () => {
     return (

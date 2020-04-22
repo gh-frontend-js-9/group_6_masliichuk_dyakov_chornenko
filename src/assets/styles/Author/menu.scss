@@ -17,7 +17,7 @@
   }
 
   a {
-    color: #000000;
+    color: $black-color;
     font-size: 16px;
     font-weight: 600;
   }
@@ -25,7 +25,7 @@
 
 .header-menu li:hover {
   border-radius: 10px;
-  background-color: #ff5480;
+  background-color: $pink-color;
 
   a {
     color: white;
@@ -43,7 +43,7 @@
   flex-direction: row-reverse;
   margin-top: 58px;
   margin-bottom: 135px;
-  color: #111210;
+  color: $dark-black-color;
   @include create-mq($grid__bp-xl, "max") {
     display: none;
 

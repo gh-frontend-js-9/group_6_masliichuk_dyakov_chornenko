@@ -1,5 +1,5 @@
 import React from "react";
-import {IconList} from "../../Home/footer/iconlist";
+import {IconList} from "../../footer/iconlist";
 import profile from '../../../assets/images/newpage/backgr.png';
 
 export const ElementAuthor: React.FC = () => {

@@ -2,7 +2,7 @@
   height: 83px;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
   border-radius: 8px;
-  background-color: #ffffff;
+  background-color: $white-color;
   justify-content: space-between;
   @include create-mq($grid__bp-xl, "max") {
     display: none;
@@ -17,7 +17,7 @@
   input[type="text"] {
     height: 83px;
     font-family: "Open Sans";
-    color: #9b9b9b;
+    color: $grey-lighter-color;
     font-size: 14px;
     letter-spacing: -0.09px;
     line-height: 10px;
@@ -43,12 +43,12 @@
     padding-top: 32px;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
     border-radius: 8px;
-    border: 1px solid #9b9b9b;
-    background-color: #f9f9fb;
+    border: 1px solid $grey-lighter-color;
+    background-color: $grey-color;
     z-index: 4;
   
     a {
-      color: #111210;
+      color: $dark-black-color;
       height: 50px;
     }
   
@@ -57,7 +57,7 @@
     }
   
     a:hover {
-      color: #ff5480;
+      color: $pink-color;
     }
   } 
 }

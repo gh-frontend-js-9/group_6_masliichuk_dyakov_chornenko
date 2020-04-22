@@ -1,20 +1,19 @@
 .App {
-  background-color: #f9f9fb;
+  background-color: $grey-color;
 
 }
 
 .container-post {
   margin-right: 20px;
   text-align: center;
-  @include create-mq($grid__bp-xl, "max") {
-    li:nth-child(3) {
-      display: none;
-    }
+
+  @include create-mq($grid__bp-md, "max") {
+    margin-right: 0;
   }
 }
 
 .inform-page-author {
-  color: #9b9b9b;
+  color: $grey-lighter-color;
   font-size: 12px;
   letter-spacing: -0.07px;
   line-height: 58px;
@@ -27,7 +26,7 @@
 
 .container-news {
   display: flex;
-  color: #111210;
+  color: $dark-black-color;
   font-family: 'Open Sans', sans-serif;
   @include create-mq($grid__bp-xl, "max") {
     margin-left: $indent;
@@ -38,23 +37,25 @@
 
 .container-action {
   text-align: center;
-  width: 378px;
 
-  .container-slider {
+  @include create-mq($grid__bp-xl, "min") {
+    width: 378px;
   }
+
 }
 
 
 .author-post {
-  height: 25px;
-  color: #111210;
+  // height: 25px;
+  color: $dark-black-color;
   font-size: 16px;
   letter-spacing: -0.1px;
   line-height: 46px;
   text-transform: uppercase;
-  @include create-mq($grid__bp-xl, "max") {
-    margin-left: 10%;
-    margin-right: $indent;
+  @include create-mq($grid__bp-md, "max") {
+    // margin-left: 10%;
+    padding: 10px 0;
+    // margin-right: $indent;
     display: block;
   }
 
@@ -62,7 +63,7 @@
 
 .container-author {
   p {
-    color: #111210;
+    color: $dark-black-color;
     font-size: 16px;
     letter-spacing: -0.1px;
     line-height: 24px;
@@ -76,7 +77,7 @@
 .container-author li {
   width: 22px;
   height: 22px;
-  background-color: #9b9b9b;
+  background-color: $grey-lighter-color;
 }
 
 .container-post {
@@ -84,7 +85,7 @@
 }
 
 .author-post-style {
-  color: #9b9b9b;
+  color: $grey-lighter-color;
 }
 
 .container-author {
@@ -93,8 +94,8 @@
   padding-bottom: 43px;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
   border-radius: 8px;
-  background-color: #ffffff;
-  color: #111210;
+  background-color: $white-color;
+  color: $dark-black-color;
   text-align: center;
   margin-bottom: 20px;
   @include create-mq($grid__bp-xl, "max") {
@@ -109,7 +110,7 @@
 .container-search {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
   border-radius: 8px;
-  background-color: #ffffff;
+  background-color: $white-color;
   margin-bottom: 20px;
   @include create-mq($grid__bp-xl, "max") {
     width: 100%;
@@ -125,7 +126,7 @@
 
 
 .item-news {
-  margin-bottom: 52px;
+  margin-bottom: 100px;
   @include create-mq($grid__bp-xl, "max") {
     text-align: center;
   }
@@ -135,7 +136,7 @@
     height: 546px;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
     border-radius: 8px;
-    background-color: #ffffff;
+    background-color: $white-color;
     margin-bottom: 20px;
     @include create-mq($grid__bp-xl, "max") {
       width: 75%;
@@ -154,16 +155,29 @@
 
 
 }
-.post-item-title a:hover {
-  color: #ff5480;
+
+
+.post-item-title {
+
+  @include create-mq($grid__bp-md, "max") {
+    a {
+      font-size: 23px;
+    }
+  }
+
+  a:hover {
+    color: $pink-color;
+  }
 }
+
+
 .post-item-title:first-letter {
   text-transform: uppercase;
 }
 
 .container-subscribe {
   padding-top: 148px;
-  margin-bottom: 20px;
+  margin-bottom: 60px;
   text-align: center;
   @include create-mq($grid__bp-xl, "max") {
     width: 80%;
@@ -172,7 +186,7 @@
 }
 
 .container-subscribe h2 {
-  color: #111210;
+  color: $dark-black-color;
   font-size: 48px;
   font-weight: 600;
   letter-spacing: -0.3px;
@@ -180,7 +194,7 @@
 }
 
 .container-subscribe p {
-  color: #111210;
+  color: $dark-black-color;
   font-size: 18px;
   font-weight: 600;
   letter-spacing: -0.11px;
@@ -199,8 +213,8 @@
     border-bottom-left-radius: 40px;
     border-top-left-radius: 40px;
     border: none;
-    background-color: #ffffff;
-    color: #111210;
+    background-color: $white-color;
+    color: $dark-black-color;
     font-size: 16px;
     letter-spacing: -0.1px;
     line-height: 46px;
@@ -211,8 +225,8 @@
     height: 72px;
     border: none;
     border-radius: 40px;
-    background-color: #ff5480;
-    color: #ffffff;
+    background-color: $pink-color;
+    color: $white-color;
     font-size: 24px;
     font-weight: 600;
     letter-spacing: -0.5px;
@@ -220,7 +234,9 @@
   }
 }
 
-.strange-button {
+.subscribe-form {
+
+  padding-top: 20px;
 
   form {
     display: flex;
@@ -250,7 +266,7 @@
 .container-small-subscribe {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
   border-radius: 8px;
-  background-color: #ffffff;
+  background-color: $white-color;
   text-transform: uppercase;
   padding-top: 29px;
   padding-bottom: 52px;
@@ -268,7 +284,7 @@
   }
 }
 
-.container-small-subscribe .strange-button form {
+.container-small-subscribe .subscribe-form form {
 
   input {
     width: 205-16px;
@@ -278,7 +294,7 @@
     border: none;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.14);
     border-radius: 40px;
-    background-color: #ffffff;
+    background-color: $white-color;
   }
 
   button {
@@ -286,9 +302,9 @@
     height: 42px;
     border: none;
     border-radius: 40px;
-    background-color: #ff5480;
+    background-color: $pink-color;
     margin-left: -42px;
-    color: #ffffff;
+    color: $white-color;
     font-size: 14px;
     font-weight: 600;
     letter-spacing: -0.29px;
@@ -298,10 +314,10 @@
 }
 
 .container-social-media {
-  color: #111210;
+  color: $dark-black-color;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
   border-radius: 8px;
-  background-color: #ffffff;
+  background-color: $white-color;
   font-size: 18px;
   font-weight: 600;
   letter-spacing: -0.11px;
@@ -320,7 +336,7 @@
   height: 305px;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
   border-radius: 8px;
-  background-color: #ffffff;
+  background-color: $white-color;
   margin-bottom: 20px;
   margin-top: 20px;
   justify-content: center;
@@ -340,7 +356,7 @@
 
 .container-adsbanner h2 {
   margin-top: 140px;
-  color: #111210;
+  color: $dark-black-color;
   font-size: 18px;
   font-weight: 600;
   letter-spacing: -0.11px;

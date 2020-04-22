@@ -20,7 +20,7 @@
     width: 79px;
     height: 79px;
     background-color: #f1f1f1;
-    color: #111210;
+    color: $dark-black-color;
     margin-left: 20px;
     text-align: center;
     @include create-mq($grid__bp-lg, "max") {
@@ -42,7 +42,7 @@
 }
 
 .pagination button:active {
-  background-color: #ff5480;
+  background-color: $pink-color;
   color: white;
 
   button {
@@ -53,7 +53,7 @@
 }
 
 .pagination button:hover {
-  background-color: #9b9b9b;
+  background-color: $grey-lighter-color;
 
   button {
     color: white;
@@ -61,9 +61,9 @@
 }
 
 .pagination button:active {
-  background-color: #ff5480;
+  background-color: $pink-color;
 
   button {
-    color: #ffffff;
+    color: $white-color;
   }
 }

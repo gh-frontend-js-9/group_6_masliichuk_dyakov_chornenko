@@ -1,5 +1,5 @@
 import React from "react";
-import {navigationIconMedia} from "../../data/data";
+import {navigationIconMedia} from "../data/data";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 export const IconList = () => {

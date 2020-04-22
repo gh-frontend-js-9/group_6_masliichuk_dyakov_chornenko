@@ -3,7 +3,7 @@ import React from "react";
 import {ElementCalendar} from "./RightBlock/Calendar";
 import {ElementAuthor} from "./PostsList/AuthorBlock";
 import {ElementPopularPost} from "./RightBlock/PopularPost";
-import {Footer} from "../Home/footer";
+import {Footer} from "../footer";
 import {ElementSubscribe} from "./FornSubscribe/Subscribe";
 import {SocialMedia} from "./RightBlock/SocialMedia";
 import {ElementSmallSubscribe} from "./RightBlock/Smallsubscribe";
@@ -12,8 +12,8 @@ import {ElementFilter} from "./RightBlock/Filter";
 import {ElementRecentPost} from "./RightBlock/RecentPost";
 import SimpleSlider from "./RightBlock/SliderPhoto";
 import Pagination from "./PostsList/Paginate";
-import {FieldSearch, Menu} from "../Menu/Menu";
 import SearchExample from "./RightBlock/Search";
+import Header from '../header/Header';
 
 export const Author: React.FC = () => {
 
@@ -21,9 +21,9 @@ export const Author: React.FC = () => {
 
         <div className="App">
 
+            <Header plain={true} />
             <section className={'container-news container'}>
                 <div className={'container-post'}>
-                    <Menu/>
                     <ElementAuthor/>
                     <Pagination/>
                     <ElementSubscribe/>
@@ -31,7 +31,6 @@ export const Author: React.FC = () => {
                 </div>
 
                 <div className={'container-action'}>
-                    <FieldSearch/>
                     <SearchExample/>
                     <div className={'doubleblock-mobile'}>
                         <ElementPopularPost/>
