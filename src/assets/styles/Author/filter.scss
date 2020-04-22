@@ -1,0 +1,35 @@
+.container-filter {
+  @include create-mq($grid__bp-lg, "max") {
+display: none;
+  }
+  ul {
+    text-align: left;
+  }
+li{
+  display: inline-block;
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+button {
+  height: 34px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+  border: none;
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: #111210;
+  font-size: 14px;
+  margin: 0;
+
+}
+}
+.button-filter-icon {
+  margin-left: 13px;
+  color:  #979797;
+}
+button:hover {
+  background-color: #9283e0;
+  color: white;
+  .button-filter-icon {
+    color: white;
+  }
+}

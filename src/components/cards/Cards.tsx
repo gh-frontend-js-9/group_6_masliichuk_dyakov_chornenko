@@ -46,14 +46,14 @@ export default class Cards extends React.Component<IProps, IState> {
                                     <div className="col-md-6">
                                         <div className="cards__right-block">
                                             <div className="row">
-                                                <div className="col-md-6">
+                                                <div className="col-6 col-md-6">
                                                     <div className="cards__item">
                                                         <h4>FREELANCING</h4>
                                                         <a href="#">7 Best WordPress Caching Plugins for 2018</a>>
                                                     </div>
                                                 </div>
 
-                                                <div className="col-md-6">
+                                                <div className="col-md-6 col-6">
                                                     <div className="cards__item">
                                                             <h4>RESOURCE</h4>
                                                             <a href="#">Kinsta Kingpin: Interview with Kevin Muldoon</a>
@@ -63,14 +63,14 @@ export default class Cards extends React.Component<IProps, IState> {
 
 
                                             <div className="row">
-                                                <div className="col-md-6">
+                                                <div className="col-6 col-md-6">
                                                     <div className="cards__item">
                                                         <h4>DESIGN PROCESS</h4>
                                                         <a href="#">8 Ways To Leverage LinkedIn for Marketing</a>>
                                                     </div>
                                                 </div>
 
-                                                <div className="col-md-6">
+                                                <div className="col-6 col-md-6">
                                                     <div className="cards__item">
                                                             <h4>INSPIRATION</h4>
                                                             <a href="#">Working Remotely – Everything You Need</a>

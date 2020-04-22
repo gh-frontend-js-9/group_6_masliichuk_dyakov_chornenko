@@ -1,0 +1,51 @@
+.header-menu {
+  display: flex;
+  height: 160px;
+  justify-content: space-between;
+
+  .menu-header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    padding-top: 58px;
+
+    li {
+      max-height: 20px;
+      padding: 7px 20px 8px 18px;
+    }
+  }
+
+  a {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 600;
+  }
+}
+
+.header-menu li:hover {
+  border-radius: 10px;
+  background-color: #ff5480;
+
+  a {
+    color: white;
+  }
+}
+
+
+.image-inprogress {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.field-top-search {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 58px;
+  margin-bottom: 135px;
+  color: #111210;
+  @include create-mq($grid__bp-xl, "max") {
+    display: none;
+
+  }
+}

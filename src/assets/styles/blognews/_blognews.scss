@@ -31,17 +31,16 @@
     border-radius: 8px;
     background-color: #ffffff;
     margin-bottom: 20px;
-    @include create-mq($grid__bp-lg, "max") {
-      display: none;
+    @include create-mq($grid__bp-md, "max") {
+      height: auto;
+      max-width: 100%;
     }
   }
 }
 
 .col-article:first-child {
   padding-right: 23px;
-  @include create-mq($grid__bp-md, "max") {
-    display: none;
-  }
+  padding-bottom: 40px;
 }
 
 .article-author {
