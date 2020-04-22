@@ -1,6 +1,7 @@
 import React from "react";
 import logo from '../../assets/images/header/logo2.png'
 import iconsearch from '../../assets/images/newpage/iconsearch.png'
+import {Link} from "react-router-dom";
 
 export const Menu = () => {
     return (
@@ -16,7 +17,7 @@ export const Menu = () => {
                 </ul>
             </div>
             <div className={'container'}>
-                <p className={'inform-page-author'}><span>Home</span> — Tomas Laurinavicius</p>
+                <p className={'inform-page-author'}><Link to="/">Home</Link> — <Link to="/Author">Tomas Laurinavicius</Link></p>
             </div>
         </div>
     )

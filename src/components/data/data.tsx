@@ -6,7 +6,7 @@ import {faFacebookF} from '@fortawesome/free-brands-svg-icons';
 
 export const fakeData = [
     {
-        image: '',
+        image: 'https://via.placeholder.com/1024x400',
         title: 'Website Downtime: Applicable Tips on How to Prevent It',
         author: 'TOMAS LAURINAVICIUS',
         resource: 'RESOURСE',
@@ -15,7 +15,7 @@ export const fakeData = [
             'started.'
     },
     {
-        image: 'contentPhoto1',
+        image: 'https://via.placeholder.com/1024x400',
         title: 'How to Fix Error 404 Not Found on Your WordPress Site',
         author: 'TOMAS LAURINAVICIUS',
         resource: 'ANNOUNCEMENTS',

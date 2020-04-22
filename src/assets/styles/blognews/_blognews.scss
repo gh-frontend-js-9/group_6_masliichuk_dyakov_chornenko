@@ -2,8 +2,8 @@
   position: relative;
   background-color: #f9f9fb;
   @include create-mq($grid__bp-xl, "max") {
-    margin-left: $indent;
-    margin-right: $indent;
+    padding-left: $indent;
+    padding-right: $indent;
   }
 }
 
@@ -12,6 +12,7 @@
   align-items: center;
   width: 100%;
   padding: 0px 0 146px;
+
   @include create-mq($grid__bp-lg, "max") {
     padding-top: 20px;
     flex-direction: column;
@@ -30,17 +31,16 @@
     border-radius: 8px;
     background-color: #ffffff;
     margin-bottom: 20px;
-    @include create-mq($grid__bp-lg, "max") {
-      display: none;
+    @include create-mq($grid__bp-md, "max") {
+      height: auto;
+      max-width: 100%;
     }
   }
 }
 
 .col-article:first-child {
   padding-right: 23px;
-  @include create-mq($grid__bp-md, "max") {
-    display: none;
-  }
+  padding-bottom: 40px;
 }
 
 .article-author {
@@ -48,6 +48,7 @@
   text-transform: uppercase;
   @include create-mq($grid__bp-lg, "max") {
     max-width: 100%;
+    padding-bottom: 20px;
   }
 }
 

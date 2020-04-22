@@ -20,7 +20,7 @@
   line-height: 58px;
   margin: 0;
 
-  span {
+  a {
     color: #c8c8c8;
   }
 }
@@ -38,11 +38,14 @@
 
 .container-action {
   text-align: center;
+  width: 378px;
 
+  .container-slider {
+  }
 }
 
+
 .author-post {
-  width: 377px;
   height: 25px;
   color: #111210;
   font-size: 16px;
@@ -104,7 +107,6 @@
 }
 
 .container-search {
-  width: 378px;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
   border-radius: 8px;
   background-color: #ffffff;
@@ -246,7 +248,6 @@
 }
 
 .container-small-subscribe {
-  width: 378px;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
   border-radius: 8px;
   background-color: #ffffff;
@@ -297,7 +298,6 @@
 }
 
 .container-social-media {
-  width: 378px;
   color: #111210;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
   border-radius: 8px;
@@ -317,7 +317,6 @@
 
 .container-adsbanner {
   display: flex;
-  width: 378px;
   height: 305px;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
   border-radius: 8px;

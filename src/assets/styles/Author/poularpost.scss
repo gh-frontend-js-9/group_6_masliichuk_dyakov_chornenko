@@ -1,5 +1,4 @@
 .container-poppost {
-  width: 378px;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
   border-radius: 8px;
   background-color: #ffffff;
@@ -27,10 +26,9 @@
 
 .item-popular-post {
   display: flex;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
   margin-left: 27px;
   text-align: left;
-  height: 80px;
 
 
   @include create-mq($grid__bp-lg, "max") {
@@ -129,21 +127,18 @@
 }
 
 .container-recentpost {
-  width: 378px;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
   border-radius: 8px;
   background-color: #ffffff;
   text-align: left;
-  padding-top: 32px;
-  padding-bottom: 40px;
+  
+  padding: 32px 20px 40px;
   margin-top: 20px;
+
   @include create-mq($grid__bp-lg, "max") {
     display: none;
   }
 
-  li {
-    margin-left: 31px;
-  }
   h3 {
     margin-top: 0;
   }

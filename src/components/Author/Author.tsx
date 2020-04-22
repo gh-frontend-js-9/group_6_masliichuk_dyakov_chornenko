@@ -38,7 +38,7 @@ export const Author: React.FC = () => {
                         <ElementRecentPost/>
                     </div>
                     <ElementSmallSubscribe/>
-                    <SimpleSlider/>
+                    <SimpleSlider slidesCount={1} />
                     <SocialMedia/>
                     <ElementCalendar/>
                     <div className={'doubleblock-mobile'}>

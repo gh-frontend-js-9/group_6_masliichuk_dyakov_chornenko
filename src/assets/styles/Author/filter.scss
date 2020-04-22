@@ -1,5 +1,4 @@
 .container-filter {
-  width: 378px;
   @include create-mq($grid__bp-lg, "max") {
 display: none;
   }
@@ -9,6 +8,7 @@ display: none;
 li{
   display: inline-block;
   margin-right: 8px;
+  margin-bottom: 8px;
 }
 button {
   height: 34px;

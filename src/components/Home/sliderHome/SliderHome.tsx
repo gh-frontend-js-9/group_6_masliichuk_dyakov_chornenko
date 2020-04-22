@@ -12,7 +12,7 @@ export const SliderHome = () => {
             </div>
 
             <div className={'container-slider-home '}>
-                <SimpleSlider/>
+                <SimpleSlider slidesCount={6} />
             </div>
         </div>
     )

@@ -13,7 +13,13 @@
    // width: 100%;
     padding: 0;
     margin: 0;
+  }
 
+  @include create-mq($grid__bp-md, "max") {
+    > div:last-child {
+      width: 100%;
+      text-align: center;
+    }
   }
 }
 
@@ -55,7 +61,7 @@ footer .footer-list-icon {
   font-size: 0.875rem;
 }
 
-.footer-list-icon li {
+.footer-list-icon > li {
   display: inline-block;
   margin-left: 20px;
   width: 20px;
@@ -65,12 +71,13 @@ footer .footer-list-icon {
   border-radius: 50px;
   opacity: 0.8;
 
+  &:first-child { margin-left: 0; }
 }
 
 .container-social-media li {
   width: 37px;
   height: 33px;
-  padding-top: 6px;
+  // padding-top: 6px;
   background-color: #ff5480;
 }
 .container-social-media li:hover {
