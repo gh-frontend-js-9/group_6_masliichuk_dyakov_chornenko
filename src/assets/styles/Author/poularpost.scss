@@ -115,7 +115,6 @@
     font-weight: 600;
   }
 }
-
 .doubleblock-mobile {
   @include create-mq($grid__bp-xl, "max") {
     padding: 12%;
@@ -149,6 +148,7 @@
 
   li {
     margin-left: 31px;
+    padding-bottom: 20px;
   }
 
   h3 {
@@ -163,6 +163,9 @@
     letter-spacing: -0.11px;
     line-height: 30px;
     text-transform: uppercase;
+    margin-bottom: 0;
+
+
 
   }
 

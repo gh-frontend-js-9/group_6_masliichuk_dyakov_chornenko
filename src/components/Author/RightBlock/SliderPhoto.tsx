@@ -16,7 +16,7 @@ class SimpleSlider extends React.Component {
             slidesToScroll: 1
         };
         return (
-            <div className={'container-slider'}>
+            <div className={'container-slider container'}>
                 <Slider {...settings}>
                     <div className={'data-simple-slider'}>
                         <img

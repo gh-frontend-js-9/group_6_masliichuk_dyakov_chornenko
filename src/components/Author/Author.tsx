@@ -16,7 +16,6 @@ import {FieldSearch, Menu} from "../Menu/Menu";
 import SearchExample from "./RightBlock/Search";
 
 export const Author: React.FC = () => {
-
     return (
 
         <div className="App">
