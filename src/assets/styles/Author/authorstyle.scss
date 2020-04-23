@@ -59,9 +59,7 @@
   line-height: 46px;
   text-transform: uppercase;
   @include create-mq($grid__bp-md, "max") {
-     margin-left: 10%;
     padding: 10px 0;
-     margin-right: $indent;
     display: block;
   }
 
