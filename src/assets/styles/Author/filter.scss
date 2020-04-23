@@ -1,5 +1,5 @@
 .container-filter {
-  @include create-mq($grid__bp-lg, "max") {
+  @include create-mq($grid__bp-xl, "max") {
 display: none;
   }
   ul {

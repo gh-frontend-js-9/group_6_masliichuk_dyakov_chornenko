@@ -8,11 +8,14 @@
 
   padding-left: $indent;
     padding-right: $indent;
+  @include create-mq($grid__bp-xl, "max") {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
 
   @include create-mq($grid__bp-lg, "max") {
     width: 100%;
     margin-bottom: 20px;
-    // height: 483px;
   }
 
   h2 {
@@ -27,23 +30,12 @@
 .item-popular-post {
   display: flex;
   padding-bottom: 30px;
-  // margin-left: 27px;
   text-align: left;
 
   @include create-mq($grid__bp-md, "max") {
-    // justify-content: center;
     display: block;
     text-align: center;
     margin: 0;
-
-    > div {
-      margin-right: 0 !important;
-    }
-  }
-
-  > div:first-child {
-    margin-right: 20px;
-    flex-basis: 80px;
   }
 
   img {
@@ -52,6 +44,7 @@
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
     border-radius: 8px;
     background-color: $white-color;
+    margin-right: 20px;
 
     @include create-mq($grid__bp-md, "max") {
       width: auto;
@@ -62,8 +55,6 @@
   .title-poppost {
     flex-basis: 80%;
     padding-top: 2px;
-    // max-width: 241px;
-    // height: 53px;
     color: $black-color;
     font-size: 16px;
     font-weight: 500;
@@ -72,7 +63,6 @@
     }
 
     h3 {
-      // width: 241px;
       font-size: 16px;
       font-weight: 600;
       margin: 0;
@@ -117,17 +107,15 @@
 }
 
 .doubleblock-mobile {
-  @include create-mq($grid__bp-md, "max") {
-    // padding: 12%;
+  @include create-mq($grid__bp-xl, "max") {
     display: flex;
     div {
       flex-direction: row;
     }
     .container-recentpost {
-      margin-left: 3%;
-      height: 483px;
-      padding-bottom: 0;
+      margin-right: 5%;
       margin-top: 0;
+      padding-bottom: 0;
 
     }
 
@@ -139,11 +127,10 @@
   border-radius: 8px;
   background-color: $white-color;
   text-align: left;
-  
   padding: 32px 20px 40px;
   margin-top: 20px;
 
-  @include create-mq($grid__bp-lg, "max") {
+  @include create-mq($grid__bp-md, "max") {
     display: none;
   }
 

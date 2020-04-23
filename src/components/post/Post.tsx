@@ -116,11 +116,11 @@ class Post extends React.Component<any, any> {
                                     </ul>
 
                                     <div className="row post__images-list" >
-                                        <div className="col-md-6">
+                                        <div className="col-12 col-md-6">
                                             <div><img className="post__image" src="https://via.placeholder.com/475x574?text=Visit+Blogging.com+Now%20C/O%20https://placeholder.com/" alt="post_image" /></div>
                                         </div>
 
-                                        <div className="col-md-6">
+                                        <div className="col-12 col-md-6">
                                         <div><img className="post__image" src="https://via.placeholder.com/475x574?text=Visit+Blogging.com+Now%20C/O%20https://placeholder.com/" alt="post_image" /></div>
                                         </div>
                                     </div>
@@ -239,7 +239,7 @@ class Post extends React.Component<any, any> {
                                 <hr/>
 
                                 <div className="row form-comment">
-                                    <div className="col-md-12">
+                                    <div className="col-12 col-md-12">
                                         <form className="form-comment__container">
                                             <h3>Leave a Reply</h3>
                                             <div className="form-comment__group">

@@ -4,6 +4,8 @@
   border-radius: 8px;
   background-color: $white-color;
   justify-content: space-between;
+  position: relative;
+  
   @include create-mq($grid__bp-xl, "max") {
     display: none;
   }
@@ -15,6 +17,7 @@
   
   
   input[type="text"] {
+    outline: none;
     height: 83px;
     font-family: "Open Sans";
     color: $grey-lighter-color;
@@ -40,12 +43,12 @@
   .window-results-search {
     display: flex;
     position: absolute;
-    padding-top: 32px;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+    padding: 20px;
     border-radius: 8px;
     border: 1px solid $grey-lighter-color;
     background-color: $grey-color;
-    z-index: 4;
+    z-index: 9999999;
   
     a {
       color: $dark-black-color;
@@ -58,6 +61,15 @@
   
     a:hover {
       color: $pink-color;
+    }
+
+    .item-popular-post {
+      > div:first-child {
+        flex-basis: 90px;
+      }
+      > div:last-child {
+        flex-basis: 60%;
+      }
     }
   } 
 }

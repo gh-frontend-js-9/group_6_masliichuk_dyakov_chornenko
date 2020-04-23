@@ -46,16 +46,16 @@
 
 
 .author-post {
-  // height: 25px;
+   height: 25px;
   color: $dark-black-color;
   font-size: 16px;
   letter-spacing: -0.1px;
   line-height: 46px;
   text-transform: uppercase;
   @include create-mq($grid__bp-md, "max") {
-    // margin-left: 10%;
+     margin-left: 10%;
     padding: 10px 0;
-    // margin-right: $indent;
+     margin-right: $indent;
     display: block;
   }
 
@@ -356,13 +356,9 @@
   margin-top: 20px;
   justify-content: center;
 
-  @include create-mq($grid__bp-xl, "max") {
-    display: flex;
-    margin-top: 0;
-    margin-right: 3%;
-  }
 
-  @include create-mq($grid__bp-lg, "max") {
+
+  @include create-mq($grid__bp-xl, "max") {
     display: none;
   }
 

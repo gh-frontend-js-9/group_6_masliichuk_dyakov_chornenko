@@ -284,6 +284,10 @@
 
         > .row:first-child  {
             margin-bottom: 60px;
+
+            @include create-mq($grid__bp-md, "max") {
+                justify-content: space-between;
+            }
         }
 
         > .row:nth-child(2)  {
@@ -386,9 +390,12 @@
             }
         }
     }
+    
     > .row:first-child{
         margin-bottom:40px;
+        justify-content: space-between;
     }
+
     &__more{
         text-align: right;
         display: block;
@@ -405,6 +412,7 @@
         text-transform: uppercase;
         font-style: normal;
         font-weight: 400;
+
         span{
             color: $grey-lighter-color;
         }
