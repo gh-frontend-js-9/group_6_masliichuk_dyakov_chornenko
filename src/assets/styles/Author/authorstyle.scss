@@ -41,6 +41,12 @@
   @include create-mq($grid__bp-xl, "min") {
     width: 378px;
   }
+  
+  .container-slider {
+    @include create-mq($grid__bp-xl, "max") {
+      padding: 40px 0;
+    }
+  }
 
 }
 
@@ -324,7 +330,9 @@
     font-weight: 600;
     letter-spacing: -0.29px;
 
-
+    &:hover {
+      background-color: #9283e0;
+    }
   }
 }
 
