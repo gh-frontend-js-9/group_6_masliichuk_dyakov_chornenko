@@ -1,23 +1,72 @@
 import React from "react";
 import post_image from './../../assets/images/post/nature.jpg';
 import post_team from './../../assets/images/post/team.png';
+import {fetchPost, fetchComments} from "../redux/action/action";
+import {connect} from "react-redux";
+import {withRouter} from 'react-router';
+import {fakeData} from "../data/data";
 
-interface IProps {}
-
-interface IState {
-   
-}
-
-export default class Post extends React.Component<IProps, IState> {
+class Post extends React.Component<any, any> {
+    
+    componentDidMount() {
+        const postId = parseInt(this.props.match.params.id);
+        this.props.onPostFetch(postId);
+        this.props.onCommentsFetch(postId);
+    }
 
     render() {
+        if (!this.props.post) { return <div>Loading...</div>; }
+
+        let comments = null;
+        if (this.props.comments) {
+            comments = (
+                this.props.comments.map((comment: any, index: number) => {
+                    return <div key={index} className="row comments__item">
+                        <div className="col-md-2">
+                            <div className="comments__avatar">
+                                <img src={post_team} alt="post_team" />
+                            </div>
+                        </div>
+                        
+                        <div className="col-md-10 comments__right-block">
+                            <div className="row">
+                                <div className="col-12 col-md-3">
+                                    <div className="comments__author">
+                                    <p>{comment.name}</p>
+                                    </div>
+                                </div>
+
+                                <div className="col-md-7 col-12">
+                                    <div className="comments__data">
+                                        <p>December 14, 2017 at 5:13 pm</p>
+                                    </div>
+                                </div>
+
+                                <div className="col-12 col-md-2 comments__reply">
+                                    <button type="button" className="btn-reply">Reply</button>
+                                </div>
+                            </div>
+
+                            <div className="row">
+                                <div className="col-md-10">
+                                    <div className="comments__description">
+                                        <p>{comment.body}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                                              
+                    </div>
+                })
+            );
+        }
+
         return (
             <div>
                 <article className="post">
                     <div className="container">
                         <div className="post__heading" >
-                            <h1>10 Reasons to Build Your Website with WP Page Builder</h1>
-                            <h3>People’s quest for creating websites has easily taken us to a new era of site development. Where, with the availability of robust page building tools, creating websites has become a lot more fun (especially for non-developers).</h3>
+                            <h1>{this.props.post.title}</h1>
+                            <h3>{this.props.post.body}</h3>
                             <address className="post__address"><span>BY</span> TOMAS LAURINAVICIUS <span>IN</span> DESIGN PROCESS</address>
                         </div>
                     </div>
@@ -26,25 +75,25 @@ export default class Post extends React.Component<IProps, IState> {
                         <div className="container">
 
                             <ul className="post__breadcrumps" >
-                                <li><a href="#">Home</a> — </li>
-                                <li><a href="#">Reading lists</a> — </li>
-                                <li><a href="#">UX Design</a> — </li>
-                                <li><a href="#">10 Reasons to Build Your Website with WP Page Builder</a></li>
+                                <li><a href="/">Home</a> — </li>
+                                <li><a href="/">Reading lists</a> — </li>
+                                <li><a href="/">UX Design</a> — </li>
+                                <li><a href="/">10 Reasons to Build Your Website with WP Page Builder</a></li>
                             </ul>
 
 
                             <div className="row" >
                                 <div className="socials col-12 col-md-1" >
                                     <div className="socials__item">
-                                        <a href="#"><i className="fa fa-facebook" aria-hidden="true"></i></a>
+                                        <a href="/"><i className="fa fa-facebook" aria-hidden="true"></i></a>
                                     </div>
 
                                     <div className="socials__item">
-                                        <a href="#"><i className="fa fa-twitter" aria-hidden="true"></i></a>
+                                        <a href="/"><i className="fa fa-twitter" aria-hidden="true"></i></a>
                                     </div>
 
                                     <div className="socials__item">
-                                        <a href="#"><i className="fa fa-instagram" aria-hidden="true"></i></a>
+                                        <a href="/"><i className="fa fa-instagram" aria-hidden="true"></i></a>
                                     </div>
 
                                     <div className="socials__item">
@@ -53,9 +102,9 @@ export default class Post extends React.Component<IProps, IState> {
                                 </div>
                                 <div className="col-md-10" >
                                     <img className="post__image" src={post_image} alt="post_image" />
-                                    <p className="post__text">People’s quest for creating websites has easily taken us to a new era of site development. Where, with the availability of robust page building tools, creating websites has become a lot more fun (especially for non-developers). The multitude of tools and plugins available to you is vast when you try building websites on WordPress. Today we’ll explore a new one,<a href="#"> WP Page Builder</a> . If you’re tired of the same old page builder plugins, this is one you should try out.</p>
+                                    <p className="post__text">{this.props.post.body}</p>
                                     <h2>What’s Special About WP Page Builder?</h2>
-                                    <p>Wondering what makes WP Page Builder so special? I would say, what doesn’t? It’s developed by the team over at Themeum, who has been creating <a href="#">WordPress themes </a> since 2013. As mentioned above, the plugin is a full pack of essential site building elements with all modern the modern functionality you’ve come to expect from a page builder plugin. Let’s have a look below at all of the juicy features WP Page Builder includes.</p>
+                                    <p>{this.props.post.body}</p>
                                     <img className="post__image" src={post_image} alt="post_image" />
                                     <p className="post__text">Here are some of the amazing add-ons included:</p>
                                     <ul>
@@ -81,7 +130,7 @@ export default class Post extends React.Component<IProps, IState> {
                                     <div className="post__author">
                                         <div><img src={post_team} alt="post_team" /> </div>
                                         <div className="post__person">TOMAS LAURINAVICIUS</div>
-                                        <div className="post__follow">Follow me <a href="#">@JohnAMWill.</a></div>
+                                        <div className="post__follow">Follow me <a href="/">@JohnAMWill.</a></div>
                                     </div>
                                 </div>
 
@@ -112,30 +161,23 @@ export default class Post extends React.Component<IProps, IState> {
                                     </div>
 
                                     <div className="col-md-6">
-                                        <a href="#" className="related-posts__more">More</a>
+                                        <a href="/" className="related-posts__more">More</a>
                                     </div>
                                 </div>
 
                                 <div className="row">
                                     
-                                    <div className="col-md-6 related-posts__item">
+                                    {fakeData.slice(0, 2).map((post: any, index: number) =>
+                                    <div key={index} className="col-md-6 related-posts__item">
                                         <div className="related-posts__block">
                                             <img className="related-posts__image" src={post_image} alt="related-posts_image" />
-                                            <address className="related-posts__address"><span>BY</span> TOMAS LAURINAVICIUS <span>IN</span> DESIGN PROCESS</address>
-                                            <h3 className="related-posts__title">Web page layout 101: website anatomy every designer needs to learn</h3>
-                                            <p className="related-posts__description">User research is the reality check every project needs. Here’s our guide to why you should be doing it — and how to get started.</p>
+                                            <address className="related-posts__address"><span>BY</span> {post.author} <span>IN</span> {post.resource}</address>
+                                            <a href="/" className="related-posts__title">{post.title}</a>
+                                            <p className="related-posts__description">{post.body}</p>
                                         </div>
                                     </div>
+                                    )}
 
-                                    <div className="col-md-6 related-posts__item">
-                                        <div className="related-posts__block last">
-                                        <img className="related-posts__image" src={post_image} alt="related-posts_image" />
-                                            <address className="related-posts__address"><span>BY</span> TOMAS LAURINAVICIUS <span>IN</span> DESIGN PROCESS</address>
-                                            <h3 className="related-posts__title">Web page layout 101: website anatomy every designer needs to learn</h3>
-                                            <p className="related-posts__description">User research is the reality check every project needs. Here’s our guide to why you should be doing it — and how to get started.</p>
-                                        </div>
-                                        
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -158,46 +200,9 @@ export default class Post extends React.Component<IProps, IState> {
                                     </div>
                                 </div>
 
+                                {comments}
 
-                                <div className="row comments__item">
-                                    <div className="col-md-2">
-                                        <div className="comments__avatar">
-                                            <img src={post_team} alt="post_team" />
-                                        </div>
-                                    </div>
-                                    
-
-                                    <div className="col-md-10 comments__right-block">
-                                        <div className="row">
-                                            <div className="col-12 col-md-3">
-                                                <div className="comments__author">
-                                                    <p>Brian Jackson</p>
-                                                </div>
-                                            </div>
-
-                                            <div className="col-md-7 col-12">
-                                                <div className="comments__data">
-                                                    <p>December 14, 2017 at 5:13 pm</p>
-                                                </div>
-                                            </div>
-
-                                            <div className="col-12 col-md-2 comments__reply">
-                                                <button type="button" className="btn-reply">Reply</button>
-                                            </div>
-                                        </div>
-
-                                        <div className="row">
-                                            <div className="col-md-10">
-                                                <div className="comments__description">
-                                                    <p>I think, you forgot to mention a very good one:
-                                                    Thrive architect from thrivethemes. That thing is pretty powerful.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>                                    
-                                </div>
-
-                                <div className="row comments__item comments__item--reply">
+                                {/* <div className="row comments__item comments__item--reply">
                                     <div className="col-md-2 col-md-offset-2">
                                         <div className="comments__avatar">
                                             <img src={post_team} alt="post_team" />
@@ -229,7 +234,7 @@ export default class Post extends React.Component<IProps, IState> {
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> */}
 
                                 <hr/>
 
@@ -251,7 +256,7 @@ export default class Post extends React.Component<IProps, IState> {
 
                                             <div>
                                                 <input id="terms" type="checkbox"/>
-                                                <label htmlFor="terms" className="form-comment__terms" >I agree to the <a href="#">Terms and Conditions</a> and <a href="#">Privacy Policy</a> </label>
+                                                <label htmlFor="terms" className="form-comment__terms" >I agree to the <a href="/">Terms and Conditions</a> and <a href="/">Privacy Policy</a> </label>
                                             </div>
 
                                             <div className="form-comment__btn">
@@ -273,3 +278,21 @@ export default class Post extends React.Component<IProps, IState> {
         )
     }
 }
+
+
+const mapStateToProps = ({post}: any) => {
+    return {
+        post: post.fetchedPost,
+        comments: post.fetchedComments,
+    };
+};
+const mapDispatchToProps = (dispatch: any) => ({
+    onPostFetch: (id: number) => {
+        dispatch(fetchPost(id));
+    },
+    onCommentsFetch: (id: number) => {
+        dispatch(fetchComments(id));
+    }
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(withRouter(Post));

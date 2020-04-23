@@ -2,16 +2,13 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import {Link} from "react-router-dom";
 
 interface IProps {
     slidesCount: number;
 }
 
 class SimpleSlider extends React.Component<IProps> {
-
-    constructor(props: any) {
-        super(props);
-    }
 
     render() {
 
@@ -58,43 +55,43 @@ class SimpleSlider extends React.Component<IProps> {
                         <img
                             src={'https://besthqwallpapers.com/Uploads/23-11-2019/112658/thumb2-neon-light-background-neon-lasers-bright-purple-background-neon-backgrounds.jpg'}
                             alt={'ITstep'}/>
-                            <a href="#" className={'slider-title-home'}>Sales</a>
+                            <Link to="/Author" className={'slider-title-home'}>Sales</Link>
                     </div>
                     <div className={'data-simple-slider'}>
                         <img
                             src={'https://besthqwallpapers.com/Uploads/23-11-2019/112658/thumb2-neon-light-background-neon-lasers-bright-purple-background-neon-backgrounds.jpg'}
                             alt={'ITstep'}/>
-                            <a href="#" className={'slider-title-home'}>UI design</a>
+                            <Link to="/Author" className={'slider-title-home'}>UI design</Link>
                     </div>
                     <div className={'data-simple-slider'}>
                             <img
                                 src={'https://besthqwallpapers.com/Uploads/23-11-2019/112658/thumb2-neon-light-background-neon-lasers-bright-purple-background-neon-backgrounds.jpg'}
                                 alt={'ITstep'}/>
-                            <a href="#" className={'slider-title-home'}>SEO</a>
+                            <Link to="/Author" className={'slider-title-home'}>SEO</Link>
                     </div>
                     <div className={'data-simple-slider'}>
                             <img
                                 src={'https://besthqwallpapers.com/Uploads/23-11-2019/112658/thumb2-neon-light-background-neon-lasers-bright-purple-background-neon-backgrounds.jpg'}
                                 alt={'ITstep'}/>
-                        <a href="#" className={'slider-title-home'}>Popular</a>
+                        <Link to="/Author" className={'slider-title-home'}>Popular</Link>
                     </div>
                     <div className={'data-simple-slider'}>
                             <img
                                 src={'https://besthqwallpapers.com/Uploads/23-11-2019/112658/thumb2-neon-light-background-neon-lasers-bright-purple-background-neon-backgrounds.jpg'}
                                 alt={'ITstep'}/>
-                        <a href="#" className={'slider-title-home'}>Essentials</a>
+                        <Link to="/Author" className={'slider-title-home'}>Essentials</Link>
                     </div>
                     <div className={'data-simple-slider'}>
                         <img
                             src={'https://besthqwallpapers.com/Uploads/23-11-2019/112658/thumb2-neon-light-background-neon-lasers-bright-purple-background-neon-backgrounds.jpg'}
                             alt={'ITstep'}/>
-                        <a href="#" className={'slider-title-home'}>Marketing</a>
+                        <Link to="/Author" className={'slider-title-home'}>Marketing</Link>
                     </div>
                     <div className={'data-simple-slider'}>
                         <img
                             src={'https://besthqwallpapers.com/Uploads/23-11-2019/112658/thumb2-neon-light-background-neon-lasers-bright-purple-background-neon-backgrounds.jpg'}
                             alt={'ITstep'}/>
-                        <a href="#" className={'slider-title-home'}>QA</a>
+                        <Link to="/Author" className={'slider-title-home'}>QA</Link>
                     </div>
                 </Slider>
             </div>

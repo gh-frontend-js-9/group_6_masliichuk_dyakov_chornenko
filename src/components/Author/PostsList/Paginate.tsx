@@ -3,7 +3,7 @@ import {connect} from "react-redux";
 import {bindActionCreators} from "redux";
 import {faChevronRight, faChevronLeft} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-
+import {Link} from "react-router-dom";
 import {fetchPosts} from "../../redux/action/action";
 
 
@@ -33,7 +33,7 @@ class Pagination extends React.Component <any, IPagination, any> {
         const indexOfFirstPost = indexOfLastPost - displayPerPage;
         const currentPost = fetchedPosts.slice(indexOfFirstPost, indexOfLastPost);
 
-        const renderPosts = currentPost.map((todo: any, index: number) => {
+        const renderPosts = currentPost.map((post: any, index: number) => {
             return <li key={index}>
                 <div className={'item-news'}>
                     <div>
@@ -47,7 +47,7 @@ class Pagination extends React.Component <any, IPagination, any> {
                             className={'author-post-style'}>IN  </span> RESOURCE
                         </p>
                     </div>
-                    <h3 className={'post-item-title'}><a href={'/Post'}>{todo.title}</a></h3></div>
+                    <h3 className={'post-item-title'}><Link to={'/post/' + post.id}>{post.title}</Link></h3></div>
             </li>;
         });
 

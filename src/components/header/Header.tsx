@@ -20,7 +20,7 @@ export default class Header extends React.Component<IProps, IState> {
             isOpen: false,
             menuItems: [
                 { title: 'Home', url: '/' },
-                { title: 'Post', url: '/post' },
+                { title: 'Post', url: '/post/1' },
                 { title: 'Author', url: '/Author' },
             ]
         };
@@ -57,11 +57,11 @@ export default class Header extends React.Component<IProps, IState> {
 
 
                     <div className="header__search">
-                        <a href="#"><img src={search} alt="search" /></a>
+                        <a href="/"><img src={search} alt="search" /></a>
                     </div>
 
                     <div className="header__toggle">
-                        <a href="#" onClick={this.handleClick} >
+                        <a href="/" onClick={this.handleClick} >
                             <div className="header__hamburger" >
                                 <div></div>
                                 <div></div>

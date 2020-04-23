@@ -422,15 +422,10 @@
     }
 
     &__title{
-        @at-root{
-            h3#{&} {
-                font-size: 28px;
-                font-weight: 600;
-                letter-spacing: -0.17px;
-                line-height: 46px;
-            }
-        }
-        
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 46px;
+        color: $black-color;
     }
 
     &__description{

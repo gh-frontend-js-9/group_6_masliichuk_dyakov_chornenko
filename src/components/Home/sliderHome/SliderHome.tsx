@@ -1,5 +1,6 @@
 import React from "react";
 import SimpleSlider from "../../Author/RightBlock/SliderPhoto";
+import {Link} from "react-router-dom";
 
 export const SliderHome = () => {
     return (
@@ -9,7 +10,7 @@ export const SliderHome = () => {
                     <h2 className={'cards-title-slider'}>
                         Reading lists
                     </h2>
-                    <a className={'cards-view-all-slider'} href={'/Post'}>View all</a>
+                    <Link className={'cards-view-all-slider'} to="/Author">View all</Link>
                 </div>
 
                 <div className={'container-slider-home '}>

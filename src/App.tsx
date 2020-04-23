@@ -31,7 +31,7 @@ function App() {
         </Route>
         <Route path={'/Topics'} component={Topics}>
         </Route>
-        <Route path="/post">
+        <Route path="/post/:id">
           <Header plain={true} />
           <Post />
         </Route>
