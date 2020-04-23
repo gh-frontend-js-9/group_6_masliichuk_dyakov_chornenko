@@ -3,6 +3,11 @@
     padding-top:180px;
     padding-bottom:180px;
 
+    &.loading {
+        color: $black-color;
+        text-align: center;
+    }
+
     &__section {
         margin-bottom: 80px;
 

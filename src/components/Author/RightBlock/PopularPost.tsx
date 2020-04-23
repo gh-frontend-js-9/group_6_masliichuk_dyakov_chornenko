@@ -2,6 +2,7 @@ import React from "react";
 import {useDispatch, useSelector} from "react-redux";
 
 import {fetchPosts} from "../../redux/action/action";
+import {Link} from "react-router-dom";
 
 interface State {
     posts: any
@@ -22,7 +23,7 @@ export const ElementPopularPost: React.FC = () => {
         </div>
         <div className={'title-poppost'}>
             <p>FREELANCING</p>
-            <h3><a href={'/Post'}>{post.title}</a></h3>
+            <h3><Link to={'/post/' + post.id}>{post.title}</Link></h3>
         </div>
     </div>)}</div>
 };

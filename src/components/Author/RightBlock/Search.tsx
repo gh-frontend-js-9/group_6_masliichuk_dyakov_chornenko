@@ -1,7 +1,7 @@
 import React from "react";
 import {bindActionCreators} from "redux";
 import {connect} from "react-redux";
-
+import {Link} from "react-router-dom";
 import {fetchPosts} from "../../redux/action/action";
 import iconsearch from "../../../assets/images/newpage/iconsearch.png";
 
@@ -50,7 +50,7 @@ class SearchExample extends React.Component <any, ISearch, any> {
                                         src={'https://besthqwallpapers.com/Uploads/23-11-2019/112658/thumb2-neon-light-background-neon-lasers-bright-purple-background-neon-backgrounds.jpg'}
                                         alt={'ITstep'}/>
                                     </div>
-                                    <div key={i.id}><a href={'/Post'}>{i.title}</a></div>
+                                    <div key={i.id}><Link to={'/Post/' + i.id}>{i.title}</Link></div>
                                 </div>)
                         })}
                     </div>

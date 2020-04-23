@@ -127,6 +127,7 @@
 
 .item-news {
   margin-bottom: 100px;
+
   @include create-mq($grid__bp-xl, "max") {
     text-align: center;
   }
@@ -138,6 +139,7 @@
     border-radius: 8px;
     background-color: $white-color;
     margin-bottom: 20px;
+
     @include create-mq($grid__bp-xl, "max") {
       width: 75%;
       height: 50%;
@@ -152,8 +154,6 @@
   font-weight: 600;
   letter-spacing: -0.22px;
   line-height: 46px;
-
-
 }
 
 
@@ -182,6 +182,10 @@
   @include create-mq($grid__bp-xl, "max") {
     width: 80%;
     padding-top: 25px;
+
+    h2 {
+      font-size: 34px !important;
+    }
   }
 }
 
@@ -242,10 +246,21 @@
     display: flex;
     flex-direction: row;
     border-radius: 40px;
-    @include create-mq($grid__bp-xl, "max") {
-      width: 80%;
-      padding-left: 5%;
 
+    @include create-mq($grid__bp-xl, "max") {
+      display: block;
+
+      input {
+        width: 100%;
+        border-radius: 40px;
+        padding-right: 20px;
+        margin-bottom: 10px;
+      }
+
+      button {
+        margin-left: 0;
+        width: 100%;
+      }
     }
   }
 

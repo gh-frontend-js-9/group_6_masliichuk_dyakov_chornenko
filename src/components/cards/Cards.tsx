@@ -25,7 +25,9 @@ class Cards extends React.Component<any, IState> {
     }
 
     render() {
-        if (this.props.postsData.length === 0) { return <div />; }
+        if (this.props.postsData.length === 0) { return (
+            <section className="cards loading"><p>Loading posts...</p></section>
+        ) }
         return (
             <section className="cards">
                 <div className="container">
@@ -50,7 +52,7 @@ class Cards extends React.Component<any, IState> {
                                         </div>
                                     </div>
 
-                                    <div className="col-md-6">
+                                    <div className="col-12 col-md-6">
                                         <div className="cards__right-block">
                                             <div className="row">
                                                 <div className="col-6 col-md-6">

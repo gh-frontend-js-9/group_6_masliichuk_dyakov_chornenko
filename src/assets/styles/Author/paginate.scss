@@ -16,6 +16,7 @@
   }
 
   button {
+    border: 0;
     border-radius: 50%;
     width: 79px;
     height: 79px;
@@ -23,11 +24,14 @@
     color: $dark-black-color;
     margin-left: 20px;
     text-align: center;
+    outline: none;
+
     @include create-mq($grid__bp-lg, "max") {
-      width: 38px;
-      height: 27px;
+      width: 45px;
+      height: 45px;
       padding-top: 5px;
       padding-bottom: 5px;
+      margin: 1px;
     }
 
     button {
@@ -41,29 +45,10 @@
   }
 }
 
-.pagination button:active {
-  background-color: $pink-color;
-  color: white;
-
-  button {
-    color: white;
-    opacity: 1;
-  }
-
-}
-
 .pagination button:hover {
-  background-color: $grey-lighter-color;
-
-  button {
-    color: white;
-  }
-}
-
-.pagination button:active {
   background-color: $pink-color;
 
   button {
-    color: $white-color;
+    color: white;
   }
 }
