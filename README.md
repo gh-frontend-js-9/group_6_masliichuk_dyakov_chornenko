@@ -1,1 +1,1 @@
-https://5e9e05cb8de5a2eb3f1e86e2--hungry-pike-74cfc9.netlify.app/
+https://hungry-pike-74cfc9.netlify.app/
